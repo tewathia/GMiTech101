@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hints</title>
+	<script>
+	window.onload=initiate;
+	function initiate()
+	{
+		document.getElementById('txtFirstName').onfocus=firstNameHint;
+		document.getElementById('txtFirstName').onblur=firstNameHint;
+		document.getElementById('txtLastName').onfocus=lastNameHint;
+		document.getElementById('txtLastName').onblur=lastNameHint;
+	}
+
+	function firstNameHint()
+	{	
+		var spanFirst=document.getElementById('spanFirstNameHint')
+		var fNV=document.getElementById('txtFirstName');
+		if (fNV.value!="")
+		{
+			spanFirst.innerText="";
+		}
+		else if (fNV.value=="")
+		{
+			spanFirst.innerText="please enter first name";
+		}
+	}
+	
+	function lastNameHint()
+	{
+		var lNV=document.getElementById('txtLastName');
+		if (lNV.value!="")
+		{
+			document.getElementById('spanLastNameHint').innerText="";
+		}
+		else if (lNV.value=="")
+		{
+			document.getElementById('spanLastNameHint').innerText="please enter last name";
+		}
+	}
+	
+
+
+	innerText="please enter your first name here";
+	</script>
+</head>
+<body>
+	<div>
+		<label for="txtFirstName">First Name:</label>
+		<input type="text" name="txtFirstName" id="txtFirstName">
+		<span id="spanFirstNameHint"></span>
+	</div>
+	<div>
+		<label for="txtLastName">Last Name:</label>
+		<input type="text" name="txtLastName" id="txtLastName">
+		<span id="spanLastNameHint"></span>
+	</div>
+</body>
+</html>

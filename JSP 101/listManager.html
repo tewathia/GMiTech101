@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>List Manager</title>
+	<style>
+	.done
+	{
+		color: red;
+		text-decoration: line-through;
+
+	}
+	span
+	{
+		color:green;
+		text-decoration: underline;
+	}
+		</style>
+	<script>
+	window.onload=initialize;
+	function initialize()
+	{	
+		document.getElementById('addButton').onclick=addListItem;
+		document.getElementById('textBox').onchange=btnDisable;
+		document.getElementById('textBox').onkeydown=btnDisable;
+		document.getElementById('removeItems').onclick=removeCompleted;
+
+	}
+	function removeCompleted()
+	{
+		var doneItems=document.querySelectorAll("ul#uList>li.done");
+		for (i=0;i<doneItems.length;i++)
+		{
+			deleteItem(doneItems[i]);
+		// }
+		// doneItems.remove();
+		// document.getElementById('uList').removeChild(li.classList.contains("done"));
+	}
+	function deleteItem()
+	{
+		this.remove();
+	}
+	function btnDisable()
+	{
+		document.getElementById('addButton').disabled=(this.value=="")
+	}
+	function addListItem()
+	{
+		// var textBox=document.getElementById('textBox')
+		// if(textBox.value=="")
+		// {
+		// 	document.getElementById('errorMessage').innerText="Blank!";
+		// }
+		// else
+		// {
+		// 	document.getElementById('errorMessage').innerText="";
+			var li = document.createElement('li');
+			li.innerHTML = textBox.value;
+			li.onclick=function()
+			{
+			// this.className="done";
+			// this.onclick=function()
+			// {
+			// 	this.classList.remove("done");
+			// }
+			this.classList.toggle("done")
+
+			}
+			// li.onclick=colorChange;
+			document.getElementById('uList').appendChild(li);
+		// }
+	}
+
+	// function colorChange()
+	// {
+
+	// 	if (this.style.color=="")
+	// 		this.style.color="red";
+
+	// 	else if (this.style.color=="red")
+	// 		this.style.color="black";
+	// }
+
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="textBox">
+		<input type="button" value="Add Item" id="addButton" disabled>
+		<span id="errorMessage"></span>
+		<span id="removeItems" >remove completed</span>
+	</form>
+	<div id="listItems">
+		<ul id="uList">
+		
+		</ul>
+	
+	</div>
+	
+
+
+</body>
+</html>

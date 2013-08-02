@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Character Limit</title>
+	<script>
+
+	// function charLimit()
+	// {
+	// 	var charValue=this.value.length;
+	// 	var userLimit=this.getAttribute("limit")
+	// 	var spanID=this.getAttribute("spanID")
+	// 	document.getElementById(spanID).innerText = charValue + "" + " /" + userLimit;
+
+	// }
+	// function keyInit()
+	// {
+	// 	var charValue=this.value.length;
+	// 	var userLimit=this.getAttribute("limit")
+	// 	var spanID=this.getAttribute("spanID")
+	// 	document.getElementById(spanID).innerText = charValue + " /" + userLimit;
+	// }
+	function keyLimit(arg)
+	{	var charValue=this.value.length;
+		var userLimit=parseInt(document.getElementById(this.getAttribute("limitID")).value);
+		var spanID=this.getAttribute("spanID")
+		document.getElementById(spanID).innerText = charValue + " /" + userLimit;
+		if(charValue>=userLimit && arg.keyCode!=8)
+			{arg.preventDefault();
+			}	
+		}
+
+		window.onload=initialize;
+		function initialize()
+		{
+		// document.getElementById("charLimitBox").onfocus=charLimit;
+		document.getElementById("charLimitBox").onkeydown=keyLimit;
+		// document.getElementById("charLimitBox").onfocus=keyInit;
+	}
+
+	</script>
+</head>
+<body>
+	<div>
+		Enter character limit:<input type="text" name="" id="limitInput"></div>
+		<label>Text Input::</label><textarea type="text" name="charlimit" id="charLimitBox" limit="10" spanID="currentSpan" limitID="limitInput"></textarea>
+
+	<span id="currentSpan"></span>
+
+</body>
+</html>

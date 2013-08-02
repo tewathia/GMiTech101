@@ -1,0 +1,232 @@
+/**
+* claytonStyle.css
+* The styles in this file represent all basic styles for the <CLIENT> <PROJECTNAME> site.
+* It includes a reset, the basic grid and some default components.
+*
+* Why we are using the equals sign in the section identifier:
+* stopdesign.com/archive/2005/05/03/css-tip-flags.html
+* 
+* @project   HTML5/CSS Basics
+* @date      2013-07-31
+* @author    Anirudh Tewathia, SapientGlobalMarkets <atewat@sapient.com>
+* @licensor  Jigar
+* @site      Clayton
+*
+* @dependency framework.css
+* @dependency core.client.css
+*
+*/
+
+/*reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*custom css page formatting starts here*/
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Main Section style start*/
+.mainSection
+{
+	background: url('../images/bg.jpg') repeat-x;
+	border: 1px solid;
+	height:551px; 
+	margin: 0 auto;
+	padding-top: 28px;
+	width:973px;
+}
+/*Main section style end*/
+/*Top Patch style start*/
+.topPatch
+{
+	background: url('../images/clayton_layoutwith-slices_03.jpg') repeat-x;
+	height:15px; 
+	margin: 0 auto;
+	width:903px;
+}
+/*Top patch style end*/
+/*Header style start*/
+.header
+{
+	/*background: white repeat-x;*/
+	height:83px; 
+	margin: auto;
+	width:929px;
+}
+.logo
+{
+	height:83px; 
+	float: left;
+	width:267px;
+
+}
+.navSection		
+{
+	background: url('../images/clayton_layoutwith-slices_07.jpg') repeat-x;
+	height:83px; 
+	float: left;
+	width:662px;
+
+}
+
+nav ul li
+{
+	float: left;
+}
+nav ul li a
+{
+	color: black;
+	display: block;
+	font-size: 11px;
+	font-family: sans-serif;
+	text-align: center;
+	text-decoration: none;
+	width: 130px;
+}
+
+
+/*Header style end*/
+
+/*Article section start*/
+
+.articleSection
+{
+	background: white;
+	height: 244px;
+	margin: auto;
+	width: 903px;
+}
+.latestNews
+{
+	float: left;
+	height: 244px;
+	overflow: auto;
+	width: 457px;
+
+}
+.paraHeading
+{
+	border-bottom: blue solid 1px;
+	color: green;
+	display: block;
+	font: 20px Verdana;
+	margin: 30px 0px 10px 17px; 
+	width: 418px;
+}
+.dateFormat
+{
+	display: block;
+	font: 14px;
+	font-weight: bold;
+	margin: 0px 0px 5px 15px;
+}
+.articlePara
+{
+	display: block;
+	font: 11px Verdana;
+	margin: 0px 0px 10px 15px;
+	width: 410px;
+}
+.asideSection
+{
+	/*background: url('../images/clayton_layoutwith-slices_14.jpg') repeat-x;*/
+	float: right;
+	height: 234px;
+	padding-right: 10px;
+	padding-top: 10px;
+	width: 427px;
+}
+/*Article section end*/
+
+/*footer section start*/
+.footerSection
+{
+	background: white;
+	height: 120px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-top: 16px;
+	width: 887px;
+}
+.box
+{	
+	background: url('../images/box.jpg');
+	float: left;
+	height: 136px;
+	margin-right: 2px;
+	width: 214px;
+}
+.boxHeading
+{
+	color: green;
+	display: block;
+	font: 20px Verdana;
+	margin: 10px 0px 5px 10px;
+}
+.box ul
+{
+	margin: 10px 0px 5px 30px;
+}
+.box ul li 
+{	
+	font: 13px Verdana;	
+	list-style-image: url('../images/bullet.jpg');
+}
+.box ul li a
+{
+	text-decoration: none;
+}
+
+
+/*footer section end*/
+
+
+
+
+/*custom css page formatting ends here*/

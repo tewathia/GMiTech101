@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>01_form_html5_START </title>
+        
+        <style type="text/css">
+		
+		/* to customize input fields */
+		
+        /*input[type="search"]
+        
+        {
+            border:5px dotted;
+            height:10px;
+        }
+        */
+		
+        </style>
+        
+    </head>
+    
+<body>
+
+<form name="feedback" method="post" action="">
+
+    <table width="800px" cellpadding="10px" cellspacing="0px" border="0">
+    
+        <tr>
+            <td width="200px">* <label>Name :</label> </td>
+            
+            <!-- placeholder = by defualt message, required = compulsory fields to enter date -->
+            <td><input type="text" name="_name" id="_name"  ></td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px">* <label>Email :</label> </td>
+            
+            <!-- email type gives us all email realted validations also make it as compulsory fields. -->
+            <td><input type=" " name="_email" id="_email"  ></td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px">* <label>Enter Telephone Num :</label> </td>
+            
+            <!-- tel = For entering a telephone number, does not enforce a particular syntax, so if you want to ensure a particular format, you can use pattern -->
+            
+            <td><input type="  " name="_tel" id="_tel" required> </td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px">* <label>Enter Pincode Num (6 digit) :</label> </td>
+            
+            <!-- pattern attribute used to define regular expressions / formats to enter data -->
+            <td><input type="text" name="_pincode" id="_pincode" pattern="     " title="6 digit Pincode" required> </td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px"><label>Age :</label> </td>
+            
+            <!-- number = spinner box, For numerical input. -->
+            <td><input type=" " name="_age" id="_age" min="    " max="   "> </td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px"><label>Age :</label> </td>
+            <td>
+            
+            <!-- range = slider panel to slide and get value accordignly. -->
+            <!--input type="range" name="age1" id="age1"--> 
+            <input type="  " id="_slider" name="_slider"  min="0" max="  " value=" " /> 
+        
+            <!-- output helps us to get the output of slider values, Displays the results of a calculation. 
+                represent the result of different types of output. Display the sum of the values of two input elements -->
+            <output name="NumberOfProducts" value="5" onforminput="value=_slider.value">5</output> </td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px"><label>Date :</label> </td>
+            <!-- date = calender ie. year, month, day. For entering a date with no time zone. -->
+            <td>date --> <input type="    " name="_date" id="_date"> </td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px"><label>DOB [Date & Time] :</label> </td>
+            
+            <!-- datetime-local = For entering a date and time with no time zone. -->
+            <td>datetime-local --> <input type="  " name="_dob" id="_dob"> </td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px"><label>Choose Color :</label> </td>
+            
+            <!-- color = color picker component, For choosing color through a well control component. -->
+            <td><input type="  " name="_color" id="_color">  </td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px"><label>Country :</label> </td>
+            <td>
+            
+                <!-- datalist is used to get advance dropdown options with auto-search while typing the data .
+                
+                Represents a set of option elements that can be used in combination with the new list attribute for input to make dropdown menus.
+                
+                When the input with the associated datalist gets focus, a dropdown menu appears and contains the values from the datalist.
+                --> 
+            <input list="_countryList" name="_countryList01" id="_countryList01"> 
+
+            	<!-- create datalist of countries -->
+                 
+
+
+
+
+
+
+            
+            </td>
+        </tr>
+        
+        <tr>
+            <td width="200px"><label>Your website :</label> </td>
+            
+            <!-- url = enter website path/webpage address, For entering a single URL.  -->
+            <td><input type="   " name="_url" id="_url"> </td>
+            
+        </tr>
+        
+        <tr>
+            <td width="200px"><label>Upload file : <br/>(Choose MULTIPLE at a time) </label></td>
+            
+            <!-- file = browse and select respective file,
+            An arbitrary file with a MIME type and optionally a file name,
+            A file upload field that accepts multiple values as attribute, 
+            Specifies that its input element represents a list of file items,
+            -->
+            
+            <td><input type="    " name="_file" id="_file" multiple> </td>
+            
+        </tr>
+        
+        
+        <tr>
+            <td width="200px"> </td>
+            <td>
+                <input type="submit" name="_submit" id="_submit" value="Send">
+                <input type="reset" name="_reset" id="_reset" value="Reset"> </td>
+        </tr>
+        
+    </table>
+    
+    </form>
+    
+    
+    
+    <p></p>
+    <p></p>
+    
+    
+    
+    <!-- get method = to get from website, action=url/web addres -->
+    
+    <form name="search" method="get" action="http://www.google.com/search">
+    
+    <table width="800px" cellpadding="10px" cellspacing="0px" border="0">
+        <tr>
+            <td width="200px"><label>Search :</label> </td>
+            <td>
+            
+                <!-- search is used to search data by using search engine, keep id and name as "q" -->
+                <input type="search" name="q" id="q" placeholder="Search here"> <!--  results="5" autosave="truedat" -->
+                <input type="submit" name="_submit" id="_submit" value="SEARCH">
+    
+    
+    
+    
+    
+                <input type="hidden" name="sitesearch" value="">
+                <!--Defines a hidden input field -->
+                <!-- The hidden input type allows authors to include form data without having it rendered to the user. This is particularly useful in form applications that span several HTML documents; user input can be carried from form to form by hidden INPUTs. Some generalized CGI scripts use hidden INPUTs to define variables for the script, as in the following example, which defines a recipient and subject for the e-mailed contents of a form:
+        
+        <INPUT TYPE=hidden NAME=recipient VALUE="liam@htmlhelp.com">
+        <INPUT TYPE=hidden NAME=subject VALUE="Feedback on your HTML Reference">
+        
+        Note that the fields are "hidden" in the sense that they are not rendered by the browser. Anyone can still view the HTML document's source to find the "hidden" fields. -->
+        
+            </td>
+            
+        </tr>
+    
+    </table>
+    
+</form>
+
+</body>
+
+</html>

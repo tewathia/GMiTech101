@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>04_css_concept_important_declaration</title>
+<style type="text/css">
+
+#mainPara
+{
+	color:red !important;
+	/* use other properties to show & explain The specificity */
+	color:green;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>important_declaration</h1>
+
+<hr width="200" align="left"/>	
+
+<p>!important is basically a keyword you can add to the end of a CSS property/value pair to give more weight to that CSS value.</p> 
+
+
+<p>The reason it is used is due to the nature of CSS, which assigns weight to values according to where they appear in the “cascade”. </p>
+
+
+<p>An !important declaration provides a way for a stylesheet author to give a CSS value more weight than it naturally has. It should be noted here that the phrase “!important declaration” is a reference to an entire CSS declaration, including property and value, with !important added (thanks to Brad Czerniak for pointing out this discrepancy).</p>
+
+
+<p id="mainPara" style="color:blue">Here is a simple code example that clearly illustrates how !important affects the natural way that styles are applied:</p>
+
+<ul>
+	<li>Tag</li>
+	<li>Class</li>
+	<li>Id</li>
+	<li>Compound</li>
+
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css1 - class selector </title>
+
+<style type="text/css">
+.redText { color:#FF0000 ; }
+
+.blueText { color:#0000FF ; }
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Class Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The .class selector selects and styles all elements with the specified class.</li>
+        <li>This selector targets on particular “CLASS” Name defined by us. [Customize Class name].</li>
+        <li>Class is generic/general which usually applies to one or more similar propety base objects/elements.</li>
+        <li>The Class selector always start with DOT / . sign.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">From bunch of 5 paragraphs, 2 will be of blue color & rest 3 of red color.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">.className {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>.className | </span> .redText { color:#FF0000 ; }
+        
+        <p class="redText">This is Para 1 with RED COLOUR</p>
+        <p class="blueText">This is Para 2 with BLUE COLOUR</p>
+        <p class="redText">This is Para 3 with RED COLOUR</p>
+        <p class="blueText">This is Para 4 with BLUE COLOUR</p>
+        <p class="blueText">This is Para 5 with BLUE COLOUR</p>
+
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="class_selector_browser_support.gif" alt="class selector browser support" /><br/>The .class selector is supported in all major browsers.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

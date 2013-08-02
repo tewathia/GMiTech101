@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+
+    <meta charset="UTF-8">
+    <title>html5 - fallback support </title>
+    
+    <style type="text/css">
+    
+    <!--To display properly in old versions of Firefox, Safari, Chrome and Opera-->
+    header,nav,section,article,aside,footer 
+    {
+        display:block;
+    }
+    
+    body 
+    {
+        margin:0px;
+        padding:0px;
+    }
+    
+    #container 
+	{
+        width:780px;
+        height:auto;
+        background-color:#F00;
+        padding:10px;
+        margin:auto;
+    }
+    
+    header 
+	{
+        width:780px;
+        height:100px;
+        background-color:#FFC;
+        margin-bottom:10px;
+        
+        /*Vendor / Browser specific properties */
+		/* to give rounded corner to div */
+        /*-moz-border-radius:30px;
+        -webkit-border-radius:30px;
+        -o-border-radius:30px;
+        -ms-border-radius:30px;
+        
+        border-radius:30px;
+        */
+    }
+    
+    nav 
+	{
+        width:780px;
+        height:50px;
+        background-color:#69F;
+        margin-bottom:10px;
+		/* To give box ie div shadow */
+        /* box-shadow: 0px 0px 5px 5px #333333; */
+    }
+    
+    section 
+	{
+        width:580px;
+        height:400px;
+        float:left;
+        background-color:#99F;
+        padding:10px;
+        margin-bottom:10px;
+    }
+    
+    article 
+	{
+        width:560px;
+        height:150px;
+        background-color:#CCCCCC;
+        padding:10px;
+        margin-bottom:10px;
+		/* To give text shadow */
+        /*text-shadow:5px 5px 5px #333333; */
+    }
+    
+    .box1 
+	{
+        width:100px;
+        height:100px;
+        background-color:rgba(10,200,200,0.4);
+        margin-right:10px;
+        float:left;
+    }
+    
+    .box2 
+	{
+        width:100px;
+        height:100px;
+        background-color:rgba(51,153,102,1);
+        margin-right:10px;
+        float:left;
+        opacity:0.5;
+    }
+    
+    aside 
+	{
+        width:170px;
+        height:200px;
+        background-color:#666;
+        float:right;
+    }
+    
+    footer 
+	{
+        width:780px;
+        height:70px;
+        background-color:#666;
+        clear:both;
+    }
+    
+    </style>
+    
+    <!-- fallback support with html5shiv/shim js libary -->
+    
+    <!--[if lt IE 9]>
+    <script src="library/js/html5.js"></script>
+    <![endif]-->
+    
+    </head>
+
+    <body>
+    
+        <div id="container">
+        
+            <header>Header Tag</header>
+        
+            <nav>nav tag. Home | Services | Profile | Gallery | Contact Us </nav>
+        
+            <section> section tag 
+            
+                <article>article tag. Shadow This is article in which you can prsent some text / para  / blogs to user. Shadow This is article in which you can prsent some text / para  / blogs to user.
+                </article>
+            
+                <article>
+                    <div class="box1">div Logo 1 </div>
+                    <div class="box2">div Logo 2</div>
+                </article>
+                
+            </section>
+            
+            <aside>aside tag</aside>
+            
+            <footer>footer tag</footer>
+            
+        </div>
+    
+    </body>
+    
+</html>

@@ -1,0 +1,248 @@
+/**
+* Style.css
+* The styles in this file represent all basic styles for the Sapient for the Project Indian Cusisine Website.
+* It includes a reset, the basic grid and some default components.
+*
+
+* @project   Clayton Website
+* @date      2013-07-31
+* @author    Jigar Pathak, SapientNitro <YOUREMAIL@sapient.com>
+* @licensor  CLIENTNAME
+* @site      Clayton Layout
+*
+*/
+/* Reset CSS code */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset CSS ends */
+
+/* Page for matting style starts */
+
+/* Main section starts*/
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+.mainSection
+{
+	width: 973px;
+	height: 551px;
+	background: url('../images/bg.jpg') repeat-x;
+	margin: 0 auto;
+	padding-top: 28px;
+
+	/*background-image: url('../images/bg.jpg');
+	background-repeat: repeat-x;*/
+}
+/* Main section ends */
+
+/*
+	margin: 10px; It applies all four side
+	margin:20p 20px; It applies 
+
+*/
+.topPatch
+{
+	width: 903px;
+	height: 15px;
+	margin: auto;
+	background-image: url('../images/clayton_layoutwith-slices_03.jpg');
+}
+
+/* header section */
+.headerSection
+{
+	width: 929px;
+	height: 83px;
+	margin: auto;
+	background-color: #FFFFFF;
+}
+.logo
+{
+	width: 267px;
+	height: 83px;
+	float: left;;
+}
+.navSection
+{
+	width: 662px;
+	height: 83px;
+	float: left;
+	background: url('../images/clayton_layoutwith-slices_07.jpg');
+}
+
+nav ul li
+{
+	float: left;
+}
+nav ul li a
+{
+	display: block;
+	width: 130px;
+	text-align: center;
+	font-size: 12px;
+	font-family: Verdana;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Header section ends */
+
+/* Article section start */
+.articleSection
+{
+	width: 903px;
+	height: 244px;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+}
+.ltsNews
+{
+	width: 457px;
+	height: 244px;
+	float: left;
+}
+.asideSection
+{
+	width: 434px;
+	height: 234px;
+	float: left;
+	padding-top: 10px;
+}
+/*
+Default value of Units
+
+pt = 12
+
+% = 100%
+
+px = 16px
+
+em = 1em
+
+12pt = 100% = 16px = 1em
+
+target / contex = result
+
+960
+
+400 / 960 = %;
+*/
+
+.paraHeading
+{
+	display: block;
+	width: 	418px;
+
+	margin: 30px 0px 10px 17px;
+
+	/*margin-left: 17px;
+	margin-top:30px;*/
+	font-family: Verdana;
+	font-size: 20px;
+	color: green; 
+	border-bottom:1px solid #CCCCCC;
+}
+.dateFormat
+{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px 0px 5px 17px;	
+}
+.articlePara
+{
+	display: block;
+	width: 420px;
+	font-size: 11px;
+	font-family: Verdana;
+	margin: 0px 0px 5px 17px;	
+}
+/* Article section ends */
+
+/* Footer section start */
+.footerSection
+{
+	width: 887px;
+	height: 136px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding-left: 16px;
+}
+.box
+{
+	width: 214px;
+	height: 136px;
+	background: url('../images/box.jpg');
+	float: left;
+	margin-right: 2px;
+}
+.boxHeading
+{
+	display: block;
+	font-size: 20px;
+	font-family: Verdana;
+	color: green;
+	margin: 10px 0px 5px 10px;
+}
+.box ul
+{
+	margin: 10px 0px 5px 30px;
+}
+.box ul li
+{
+	list-style-image: url('../images/bullet.jpg');
+	font-size: 13px;
+	font-family: Verdana;
+}
+/* Footer section ends */
+
+/* Page formating style ends*/
+
+
+
+
+
+

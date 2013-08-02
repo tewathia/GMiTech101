@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css1 - id selector </title>
+
+<style type="text/css">
+#redText { color:#FF0000 ; }
+
+#greenText { color:#00FF00 ; }
+
+#blueText { color:#0000FF ; }
+
+#yellowText { color:#FF0 ; }
+
+#pinkText { color:#F0F ; }
+
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Id Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The #id selector selects and styles all element with the specified id.</li>
+        <li>This selector targets on unique “ID” Name defined by us. [Customize Id name].</li>
+        <li>Id simply meance identification; which is always unique.</li>
+        <li>The Id selector always start with HASH / # sign.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">From bunch of 5 paragraphs, each one is having unique or different properties.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">#idName {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>#idName | </span> #redText { color:#FF0000 ; }
+        
+        <p id="redText">This is Para 1 with RED COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p id="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <p id="pinkText">This is Para 5 with PINK COLOUR</p>
+
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="id_selector_browser_support.gif" alt="id selector browser support" /><br/>The #id selector is supported in all major browsers.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

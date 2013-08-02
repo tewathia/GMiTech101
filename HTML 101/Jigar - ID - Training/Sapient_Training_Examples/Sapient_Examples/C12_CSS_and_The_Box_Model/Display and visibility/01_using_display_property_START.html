@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>01_using_display_property START </title>
+
+<style type="text/css">
+
+/* inline display property */
+h2
+{
+
+	background-color:#9F6;
+
+}
+
+/* none display property */
+#notDisplay
+{
+
+	background-color:#FC9;
+}
+
+/* block display property */
+#blockWrapper span
+{
+
+	background-color:#FCF;
+
+}
+
+/* inline-block display property */
+#inlineBlockWrapper span
+{
+
+	background-color:#996;
+}
+
+/* list-item display property */
+#listItemWrapper span
+{
+
+	background-color:#39F;
+	
+}
+
+
+</style>
+</head>
+
+<body>
+<h1>CSS display Property / using display property </h1>
+
+<hr width="650" align="left" />
+
+<p>
+The display property defines how a certain HTML element should be displayed.
+</p>
+
+
+<h1>1. inline</h1>
+<p>
+This is default. The element is displayed as an inline-level element (like span) / in a same line.
+</p>
+
+<h2>Heading 2 / 1 </h2>
+<h2>Heading 2 / 2 </h2>
+
+<hr />
+
+
+
+
+
+<h1>2. none</h1>
+<p>
+
+The element will not be displayed at all.
+<div id="notDisplay">I am disply:none, not visible on screen </div>
+
+</p>
+
+<hr />
+
+<h1>3. block</h1>
+<p>
+
+The element is displayed as a block-level element (like paragraphs and headers).
+
+<div id="blockWrapper">
+    
+  <span>1. i am span-inline but treated as block </span>
+  <span>2. i am span-inline but treated as block </span>
+  <span>3. i am span-inline but treated as block </span>
+  <span>4. i am span-inline but treated as block </span>
+    
+</div>
+
+</p>
+
+<hr />
+
+
+<h1>4. inline-block</h1>
+<p>
+
+The element is placed as an inline element (on the same line as adjacent content), but it behaves as a block element.
+<br/> <br/>
+inline-block elements gets some spaces inbetween.
+
+<div id="inlineBlockWrapper">
+    
+  <span>1. i am span-inline but treated as inline-block </span>
+  <span>2. i am span-inline but treated as inline-block </span>
+  <span>3. i am span-inline but treated as inline-block </span>
+  <span>4. i am span-inline but treated as inline-block </span>
+    
+    </div>
+
+</p>
+<hr />
+<h1>5. list-item</h1>
+<p>
+
+The element is displayed as a list-item, which means that it has a bullet in front of it. 
+<br/> <br/>
+
+<div id="listItemWrapper">
+    
+    	<span>i am span-inline but treated as bulleted list item </span>
+        <span>i am span-inline but treated as bulleted list item </span>
+        <span>i am span-inline but treated as bulleted list item </span>
+        <span>i am span-inline but treated as bulleted list item </span>
+    
+</div>
+
+</p>
+
+
+<hr />
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css1 - element element / group selector </title>
+
+<style type="text/css">
+
+p,h2,li,.leftColumn
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Element,Element / Group / Compound Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>Also known as "group" or "compound" selector</li>
+        <li>This selector targets Group/Bunch of Elements/Tags.</li>
+        <li>This selector helps to style several elements, separate each element name with a comma.</li>
+        <li>Helps to style/format more than 1 element/tag/classes/ids.</li>
+        <li>* Known as CSS Optimization Technique Selectors as it saves lots of time and code.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">Want to apply same formatting's to P,LI,H1 and class defined in html page.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">elementName,elementName {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>elementName,elementName,.className | </span> p,li,h1 { font-size:14px; }
+    
+    <div>
+        <p id="redText">This is Para 1 with RED COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <hr/>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p id="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <hr/>
+        <p id="pinkText">This is Para 5 with PINK COLOUR</p>
+	</div>
+    
+    <h2>List of web technologies : </h2>
+    	<li>HTML</li>
+        <li>XHTML</li>
+        <li>HTML 5</li>
+        <li>CSS 3</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+    
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="element_element_group_selector_browser_support.gif" alt="group selector browser support" /><br/>The element,element / group selector is supported in all major browsers.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

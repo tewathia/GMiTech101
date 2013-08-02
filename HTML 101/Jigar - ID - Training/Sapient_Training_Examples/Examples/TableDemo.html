@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Table Demo</title>
+		<meta charset="UTF-8"> 
+		<style type="text/css">
+
+		/* root selector */
+		:root { background-color:#CF6; color:#FF1234 ; }
+
+		/* Universal selector */
+		div *
+		{
+			background-color: #FFCC00;
+		}
+		/* Tag selecor */
+		p{
+			color:#FF0000;
+		}
+		/*Group selector */
+		p,h3,ul,.myHeading
+		{
+			font-size: 25px;
+		}
+		/* Child selector */
+		ol>li
+		{
+			color: #FF0000;
+		}
+
+		/* Adjcent sibling selector */
+		div+ul
+		{
+			font-size: 20px;
+		}
+
+		/* Adjcent Preceded Selector */
+		div~ul
+		{
+			font-size: 20px;
+			color: #FF0000;
+		}
+		/*Attrubut selector */
+		p[id] { color : red; text-decoration : underline  }
+
+		/* Attibute with specific value */
+		li[class=a] { color : yellow; text-decoration : underline; font-weight:bold; }
+
+		/*Attribute|=Value Selector 
+		[class|=black] { color : yellow; text-decoration : underline; font-weight:bold; border : 1px solid yellow;  }*/
+		
+		/* Attribbute value begin selector
+		[class^=black] { color : yellow; text-decoration : underline; font-weight:bold; border : 1px solid yellow;  }	*/		
+
+		/* Attribbute value end selector
+		[class$=text] { color : yellow; text-decoration : underline; font-weight:bold; border : 1px solid yellow;  }*/
+
+		/*Attribute value which contains the word */
+		[class*=text] { color : yellow; text-decoration : underline; font-weight:
+
+			bold; border : 1px solid yellow;  }
+
+			/*Psudo slelector */
+			a:link { text-decoration:none; color:#FF0000;}
+
+			a:visited { color:#ccc;}
+
+			a:hover { font-size:24px;  text-decoration:underline; }
+
+			a:active { font-size:12px;}
+
+			/* Psudo element selector */
+			p:first-letter{ font-size:50px;}
+
+			p:first-line{ font-family:Verdana, Geneva, sans-serif;}
+
+			li:first-child { text-transform:uppercase; }
+
+			/*Pseudo before selector */
+			p:before
+			{
+				content:"Dynamic Text Inserted ::: ";
+			}
+			/*Pseudo after selector */
+			p:after
+			{
+				content:"::: Dynamic Text Inserted";
+			}
+
+			/* nth-child(n) selector*/
+			/*h1:nth-child(1) { font-size:12px; background-color:#000000;   }	
+
+			li:nth-child(odd) { background-color:#000000;}
+
+			p:nth-child(2n+0) { background-color:#000000; }
+
+			h1:only-child{ background-color:#12FF34 ; 
+
+			h1:first-child{ font-style:italic; }		*/	
+
+			h1:nth-of-type(1) { background-color:#12FF34 ; }
+
+		</style>
+	</head>
+	<body>
+
+		<!-- Tags - Table, tr, td
+			 Attributes - width, height, cellspacing, cellpadding, border,colspan, rowspan, bgcolor, align, valign
+		 -->
+		
+		<table width="800" height="400" border="0">
+
+			<tr>
+				<td height="100">
+
+					<img src="http://kaw.stb01.s-msn.com/i/D8/C28BD4518C45A107121A2AB4331BA.gif">
+				</td>
+
+				<td colspan="3">
+
+					<img src="http://cdn.atdmt.com/b/ZHZH1ZH1AVPI/Unbelievable_Offer_728x90.jpg">
+
+				</td>
+			</tr>
+
+			<tr>
+				<td rowspan="3" >
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">Contact</a></li>	
+					</ul>		
+
+				</td>
+				<td width="190" height="80"><img src="http://kaw.stb00.s-msn.com/i/D4/7142090765F2DA657C7C0527D5729.jpg"></td>
+				<td>Dummy Text</td>
+				<td>Dummy Text</td>
+			</tr>
+			
+			<tr bgcolor="grey">
+				
+				<td valign="top">
+
+					<h1 class="myHeading">Class Heading</h1>
+
+					<h3>Overcrowded and overloaded: In pics</h3>
+<p>Overloading a vehicle more than its capacity is a way of life for many people. Take a look</p>
+
+	<ul type="square">
+		<li>Midday meal boycott withdrawn</li>
+		<li>TMC sweeps Panchayat polls</li>
+		<li>MP denies Rs.100 cr comment</li>
+		<li>Day of car bombings in Iraq</li>
+		<li>Indian sentenced in UAE</li>
+	</ul>
+</td>
+				<td>
+
+					<div>
+		
+						<p id="para1">This is pare one.This is pare one.This is pare one.This is pare one.This is pare one.This is pare one.This is pare one.This is pare one.</p>
+						<p id="para2">This is pare two. This is pare one.This is pare one.This is pare one.This is pare one.This is pare one.This is pare one.</p>
+						<p id="para3">This is pare three.This is pare one.This is pare one.This is pare one.</p>
+						<p id="para4">This is pare four.This is pare one.This is pare one.This is pare one.This is pare one.This is pare one.This is pare one.</p>	
+					</div>
+
+					 <h1>2. This is a heading No.2 </h1>
+
+					<ul>
+						<li class="black-text">Item one</li>
+
+						<li class="black_text">Item two</li>
+
+						<li class="yellowtext">Item three</li>
+
+						<li class="black">Item three</li>	
+					</ul>
+					<ul>
+						<li>Item one</li>
+						<li>Item two</li>
+						<li>Item three</li>	
+					</ul>			
+
+
+				</td>
+				<td>Dummy Text</td>
+			</tr>
+			
+			<tr>
+				
+				<td>
+					<ul>
+						<li>Item one</li>
+						<li>Item two</li>
+						<li>Item three</li>	
+					</ul>
+					<ol>
+						<li>Item one</li>
+						<li>Item two
+							<ul>
+								<li>Sub item</li>
+							</ul>	
+
+						</li>
+						<li>Item three</li>	
+					</ol>		
+
+				</td>
+				<td>Dummy Text</td>
+				<td>Dummy Text</td>
+			</tr>		
+
+		</table>
+
+	</body>	
+
+</html>

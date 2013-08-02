@@ -1,0 +1,40 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+} 
+
+#mainSection
+{
+	width: 90%;
+	height: 596px;
+	background-color: #FFccFF;
+	margin: 0 auto;
+}
+.headSection
+{
+	width: 100%;
+	height: 20%;
+	background-color:#000000; 
+}
+.sideBox
+{
+	width:25%;
+	height: 70%;
+	background-color: #CCCCCC;
+	float: left;
+}
+.articleSection
+{
+	width:74%;
+	height: 70%;
+	background-color: #FFCC00; 
+	float: right;
+}
+.footerSection
+{
+	width:100%;
+	height: 10%;
+	background-color: #000000;
+	clear: both; 
+}

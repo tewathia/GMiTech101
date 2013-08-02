@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+
+	function greet()
+	{
+		var nameBox=document.getElementById('txt').value;
+		console.log("hi " + nameBox);
+	}
+	function buttonPress()
+	{
+		var btnGreet = document.getElementById("btnGreet");
+		btnGreet.onclick=greet;
+	}
+	window.onload=buttonPress;
+	</script>
+</head>
+<body>
+	<input type="text" name="txt" id="txt">
+	<input type="button" value="greet" id="btnGreet">
+</body>
+</html>

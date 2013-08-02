@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Product</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="Assets/css/style.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<style type="text/css">
+
+			/* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
+			/* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
+			/* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
+.no-details details > * { 
+	display: none;
+ }
+			/* This doesn’t work very well in Firefox 3.6.x */
+			/* .no-details details[open] > * { display: block; } */
+			/* The following doesn’t toggle correctly in WebKit:
+			.no-details details > summary:before { content: '► '; }
+			.no-details details[open] > summary:before { content: '▼ '; }
+			*/
+			/* And yes, it should really be ::before, but that doesn’t work in IE8 */
+.no-details details > summary:before { 
+	float:none; 
+	 
+	content: '► '; 
+}
+
+.no-details details.open > summary:before {
+	 content: '▼ ';
+}
+			/* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
+			/* I really couldn’t be bothered though. */
+			/*
+			.no-details details > summary { padding-left: 20px; background: url(img/arrow-sprite.png) no-repeat 0 0; }
+			.no-details details.open > summary { background-position: 0 -20px; }
+			*/
+			/* Make sure summary remains visible */
+.no-details details summary { 
+display: block; 
+}
+</style>
+</head>
+
+<body>
+<!--Container Starts here-->
+<div id="container">
+	<div id="toppatch"></div>
+  	   <!--Header Starts here-->
+    <header>
+    
+    	<div id="logo">
+         <a href="index_end.html"><img src="Assets/images/clayton_layoutwith-slices_06.jpg"></a>
+       </div>
+    	
+       <nav>
+        	<ul>
+        		<li><a href="index_end.html"><img src="Assets/images/icon1.jpg" border="0"><br>home</a></li>
+                <li><a href="aboutus_end.html"><img src="Assets/images/icon2.jpg" border="0"><br>about</a></li>
+                <li><a href="product_end.html"><img src="Assets/images/icon3.jpg" border="0"><br>products</a></li>
+                <li><a href="#"><img src="Assets/images/icon4.jpg" border="0"><br>support</a></li>
+                <li><a href="contactus_end.html"><img src="Assets/images/icon5.jpg" border="0"><br>contacts</a></li>
+        	</ul>
+        </nav>
+        
+    </header>
+    <!--Header Ends here-->
+    <!--Article:Content Starts here-->
+    <article id="content">
+    	<section id="table_layout">
+        <h1 class="heading">Latest Update</h1>
+        <table class="table_style">
+  <tr>
+     <caption>
+  <strong>Record of Students</strong>
+  <details>
+   <summary>Help</summary>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+  </details>
+ </caption>
+  </tr>
+
+  <tr>
+    <th>Grade</th>
+    <th>No of Students</th>
+    <th>No of Repeaters</th>
+    <th>No of Repeaters</th>
+    <th>% of Repeaters</th>
+    <th>% of Dropouts</th>
+  
+  </tr>
+  <tr class="odd">
+    <td>1</td>
+    <td>133</td>
+    <td>8</td>
+    <td>15</td>
+    <td>6</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>127</td>
+    <td>3</td>
+    <td>4</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr class="odd">
+    <td>3</td>
+    <td>119</td>
+    <td>5</td>
+    <td>8</td>
+    <td>4</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>101</td>
+    <td>8</td>
+    <td>13</td>
+    <td>8</td>
+    <td>12</td>
+  </tr>
+  <tr class="odd">
+    <td>5</td>
+    <td>95</td>
+    <td>3</td>
+    <td>7</td>
+    <td>4</td>
+    <td>8</td>
+  </tr>
+</table>
+
+        </section>
+        
+        <!--Aside:Starts here-->
+    	<aside id="ads">
+        <div class="box1" style="padding:0 0 28px 0;">
+            <ul>
+                <li><a href="#">Why Us.</a></li>
+                <li><a href="#">Mission &amp; Vission</a></li>
+                <li><a href="#">Our Process</a></li>   
+            </ul>
+        </div>
+    	<div class="box1">
+        <h2>Lorem Ipsum Lorem</h2>
+        
+       <div class="testimonials"> 
+       <p><span> &ldquo;</span>Lorem ipsum sit amet jkl kg dhf hjfkh oto vbpm ov ntaeto vn io tpuo otnpvy iotvm tvnio soy iov dumn vnuidifmv ilmvl rta rintva ianvyt ivnofjklhg lkg bklvj otnpvy iotvm tvnio soy iov dumn vnuidifmv ilmvl rta rintva ianvyt ivnofjklhg ianvyt lkg bklvj.<span>&rdquo;</span></p>
+       </div>
+       <p><span class="testimonialname">Commercial Properties</span><br>
+       <span class="testimonialsmall">Mr.Wahab</span></p>
+        
+        </div>
+        <div class="clear"></div>
+    <div class="follow">
+        <h2>Follow Us</h2>
+          <ul>
+               <li>
+               <a href="#">
+               <img src="Assets/images/logo_fb.jpg" width="47" height="44" alt="facebook">
+               </a>
+               </li>
+               <li>
+               <a href="#">
+               <img src="Assets/images/icon_twitter.jpg" width="42" height="40" alt="twitter"> </a>
+               </li>
+               <li><a href="#"><img src="Assets/images/logo_youtube.jpg" width="49" height="46" alt="youtube"></a></li>
+          </ul>
+       
+        
+       </div>
+        </aside>
+        <!--Aside:Ends here-->
+        <div class="clear"></div>
+   
+    </article>
+     <!--Article:Content Ends here-->
+     
+    <!--Article:Client Starts here-->
+    <article id="client">
+    	<h2>Our Clients</h2>
+        	<ul>
+            	<li><a href="#"><img src="Assets/images/logo_adidas.png" width="123" height="106" alt="adidas"></a></li>
+                <li><a href="#"><img src="Assets/images/logo_bird.png" width="125" height="134" alt="bird"></a></li>
+                <li><a href="#"><img src="Assets/images/logo_apple.png" width="97" height="94" alt="apple"></a></li>
+                <li><a href="#"></a><img src="Assets/images/logo_wwf.png" width="95" height="125" alt="wwf"></li>
+                <li><a href="#"><img src="Assets/images/logo_redbull.png" width="175" height="85" alt="redbull"></a></li>
+                <li><a href="#"><img src="Assets/images/img_insurance.jpg" width="145" height="89" alt="amcorp"></a></li>
+            </ul>
+        
+        <div class="clear"></div>
+    </article>
+      <!--Article:Client Ends here-->
+     <footer>
+    	<ul>
+         <li class="clayton">Clayton &copy; 2007</li>
+         <li><a href="#">Privacy Policy</a></li>
+         <li><a href="#">Terms of Use</a></li>
+         
+        </ul>
+        <div class="clear"></div>
+    </footer>
+
+</div>
+<!--Container Ends here-->
+</body>
+</html>

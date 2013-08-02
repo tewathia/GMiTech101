@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Image Sprites ROLLOVER START - Example</title>
+<style type="text/css">
+
+	body
+	{
+		background-color:#FCF;
+	}
+	
+	/* define .nav_link1 class */
+	img.nav_link1
+	{
+		width:32px;
+		height:32px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates 
+		background:url(images/02_icons_navsprites.png) 0px 0px;*/
+		background:url('images/02_icons_navsprites.png') 0px 0px;
+		
+	}
+	
+	/* define pseudo class for hover/roll-over effect */
+	img.nav_link1:hover
+	{
+		width:32px;
+		height:32px;
+		
+		/* insert background img path with x,y or left,top co-ordinates */
+		background:url('images/02_icons_navsprites.png') 0px -162px;
+	}
+	
+	/* define .nav_link2 class */
+	img.nav_link2
+	{
+		width:32px;
+		height:32px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates */
+		
+	}
+	
+	/* define pseudo class for hover/roll-over effect */
+	img.nav_link2:hover
+	{
+		width:32px;
+		height:32px;
+		/* insert background img path with x,y or left,top co-ordinates */
+		
+	}
+	
+	/* define .nav_link3 class */
+	img.nav_link3
+	{
+		width:32px;
+		height:32px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates */
+		
+	}
+	
+	/* define pseudo class for hover/roll-over effect */
+	img.nav_link3:hover
+	{
+		width:32px;
+		height:32px;
+		
+		/* insert background img path with x,y or left,top co-ordinates */
+		
+	}
+	
+	/* define .nav_link4 class */
+	img.nav_link4
+	{
+		width:32px;
+		height:32px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates */
+		
+	}
+	
+	/* define pseudo class for hover/roll-over effect */
+	img.nav_link4:hover
+	{
+		width:32px;
+		height:32px;
+		/* insert background img path with x,y or left,top co-ordinates */
+		
+	}
+	
+	/* define .nav_link5 class */
+	img.nav_link5
+	{
+		width:32px;
+		height:32px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates */
+		
+	}
+	
+	/* define pseudo class for hover/roll-over effect */
+	img.nav_link5:hover
+	{
+		width:32px;
+		height:32px;
+		/* insert background img path with x,y or left,top co-ordinates */
+		 
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+	<ol>
+        <li>An <strong>image sprite</strong> is a collection of images put into a single image.</li>
+        <li>A web page with many images can take a long time to load and generates multiple server requests, image sprites are used to minimize server requests.</li>
+        <li>With the help of image sprite we can create navigation.</li>
+        <li>background:url(02_icons_navsprites.png) 0 0; - Defines the background image and its position (left 0px, top 0px)</li>
+        <li>transparent.gif is used because with IMG tag SRC attribute is must </li>
+	</ol>
+    
+    <h2>Actual image</h2>
+    <img src="images/02_icons_navsprites.png" /> 
+    
+    <!--  insert required images and assign id/class -->
+    <h2>Image result - after using Image Sprite</h2>
+    <img class="nav_link1" src="images/transparent.gif"/>
+    <img class="nav_link2" src="images/transparent.gif"/>
+    <img class="nav_link3" src="images/transparent.gif"/>
+    <img class="nav_link4" src="images/transparent.gif"/>
+    <img class="nav_link5" src="images/transparent.gif"/>
+
+</body>
+</html>
+

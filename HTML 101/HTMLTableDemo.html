@@ -1,0 +1,183 @@
+<!doctype HTML>
+<html>
+
+	<head>
+		<title>Tables in HTML</title>
+		<meta charset="UTF-8"/>
+
+		<style type="text/css">
+
+		/* p
+		{
+			background-color: #FF0000;
+		}
+
+		div *
+		{
+			background-color: #00FF00 ;
+		}
+		*/
+
+		:root
+		{
+			background-color: cyan;
+			background-image: "assets/images/Koala.jpg"; 
+		}
+
+		li:before
+		{
+			content: "|||||||";
+		}
+
+		p:after
+		{
+			content: ":)";
+		}
+
+		em~p
+		{
+			color: red;
+		}
+			a:link
+		{
+			color: red;
+		}
+		a:visited
+		{
+			color: cyan;
+			background-color: yellow;
+			font-size: 30px;
+			text-transform: lowercase;
+			text-decoration: line-through;
+		}
+		a:hover
+		{
+			text-decoration: underline;
+			background-color: blue;
+		}
+		a:active
+		{
+			font-size: 10px;
+			text-transform: uppercase;
+		}
+		tr:first-child
+		{
+			background-color: red;
+		}
+
+		td:first-letter
+		{
+			font-size: 50px;
+		}
+		p[id]
+		{
+			background-color: yellow;
+			text-transform: capitalize;
+			text-decoration: line-through;
+		}
+
+		p[id="para-2"]
+		{
+			background-color: green;
+			text-transform: uppercase;
+			background-image: /assets/images/Koala.jpg;
+		}
+
+		[id|="para"]
+		{
+			font-size: 30px;
+		}
+
+		[id*="ra"]
+		{
+			text-decoration: underline;
+		}
+		li:nth-child(n+2)
+		{
+			background-color: white;
+		}
+
+		strong:only-child
+		{
+			background-color: purple;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<!--<table  width="700" height="400" cellpadding="10" cellspacing="10" border="1" >
+
+			<tr style="background-color:#00FF00" >
+				<td>Dummy Text</td>
+				<td>Dummy Text</td>
+				<td>Dummy Text</td>
+				<td></td>
+			</tr>	
+			<tr align="right">
+				<td rowspan="4">Dummy Text</td>
+				<td>Dummy Text</td>
+				<td></td>
+				<td></td>
+				<td>Dummy Text</td>
+			</tr>	
+			<tr>
+				<td><img src="http://kaw.stb01.s-msn.com/i/D8/C28BD4518C45A107121A2AB4331BA.gif"></td>
+				<td colspan="8"><img src="http://kaw.stb01.s-msn.com/i/D8/C28BD4518C45A107121A2AB4331BA.gif"></td>
+				
+			</tr>	
+			<tr >
+				<td>Dummy Text</td>
+				<td></td>
+				
+				<td>Dummy Text</td>
+			</tr>	
+			<tr></tr>
+
+		</table>	-->
+		<table width="700" height="300" border="1">
+			<tr>
+				<td colspan="4">Dummy</td>
+			
+</tr><tr>
+				<td>Dummy</td>
+			<td><p>Dummy</p></td>
+		<td rowspan="3" ><ul>
+			<li><a href="#">A</a></li>
+			<li><a href="#">B</a></li>
+			<li><a href="#">C</a></li>
+			<li><a href="#">D</a></li>
+			
+		</ul></td>
+	<td>Dummy</td>
+</tr><tr>
+				<td>Dummy</td>
+			<td>
+
+				<div>
+
+					<p id="para1">Para one.</p>
+					<p id="para-2">Para two.</p>
+					<em id="para_3">Para three.</em>
+					<p id="para">Para four.</p>
+					<p>Para five.</p>
+					<strong> Para six </strong>
+				</div>
+
+			</td>
+		<td ><strong> Para six </strong>
+			Dummy</td>
+	
+</tr><tr>
+				<td>Dummy</td>
+			<td>Dummy</td>
+		<td>Dummy</td>
+	
+</tr></table>
+
+
+	</body>
+
+
+
+</html>

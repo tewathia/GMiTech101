@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+<title>03_z_index END </title>
+
+	<style type="text/css">
+	
+    #red 
+    {
+        width:600px;
+        height:500px;
+        background-color:#900;
+		
+		/* insert relative position and z-indexing vlaues */
+        position:relative;
+		z-index:110;
+
+    }
+    
+    #orange 
+    {
+        width:300px;
+        height:200px;
+        background-color:#FF9900;
+		
+		/* insert absolute position and z-indexing vlaues */
+        position:absolute;
+        left:350px;
+        top:400px;
+        z-index:100;
+    }
+    
+    #green 
+    {
+        width:300px;
+        height:200px;
+        background-color:#00FF00;
+		
+		/* insert absolute position and z-indexing vlaues */
+        position:absolute;
+        left:450px;
+        top:300px;
+        z-index:125;
+    }
+    
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="green"></div>
+
+</body>
+
+</html>

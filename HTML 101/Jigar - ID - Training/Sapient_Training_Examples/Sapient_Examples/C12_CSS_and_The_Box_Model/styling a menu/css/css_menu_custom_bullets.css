@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#nav_top{
+	width:662px;
+	height:83px;
+	background-image:url(../images/nav_bg.gif);
+	/*float:right;*/
+	
+}
+
+#nav_top ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	
+}
+
+#nav_top ul li{
+	float:left;  /*to align the li/content to right hand side. */
+}
+
+#nav_top ul li a{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#330066;
+	/*border-bottom:solid 1px #660066;
+	background-color:#666600;
+	padding:10px;*/
+	margin-top:5px;
+	width:130px;
+	text-align:center;
+	display:block;
+}
+
+/*#nav_top ul li a:hover{
+	color:#FFF;
+	background-color:#000000;
+}*/
+
+}
+

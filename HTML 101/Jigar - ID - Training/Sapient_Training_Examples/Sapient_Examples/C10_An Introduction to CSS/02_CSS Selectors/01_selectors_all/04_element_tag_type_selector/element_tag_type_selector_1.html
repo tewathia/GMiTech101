@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css - element / tag selector </title>
+
+<style type="text/css">
+
+p
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Element / Tag / Type Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The element / tag / type selector selects all elements with the specified element name.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">This selector targets on particular tag of HTML page. Wants to select all Paragraphs and assing formats.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">elementName {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>elementName | </span> p { font-size:14px; }
+    
+    <div>
+        <p id="redText">This is Para 1 with RED COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p id="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <p id="pinkText">This is Para 5 with PINK COLOUR</p>
+	</div>
+    
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="element_tag_type_selector_browser_support.gif" alt="element selector browser support" /><br/>The element/tag/type selector is supported in all major browsers.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

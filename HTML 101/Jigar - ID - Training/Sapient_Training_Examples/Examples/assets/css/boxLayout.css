@@ -1,0 +1,70 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+#mainSection
+{
+	background-color: #666666;
+	height: 596px;
+	margin: 0 auto;
+	width: 1003px;
+}
+
+/* Four values for the floating element
+ - left
+ - right
+ - inherit
+ - none
+ */
+.headerSection
+{
+	width: auto;
+	height: 120px;
+	background-color: #FFCC00;
+}
+.leftBox
+{
+	width: 200px;
+	height: 400px;
+	background-color:yellow;
+	float: left;
+}
+.contentSection
+{
+	width: 800px;
+	height: 400px;
+	background-color: #0000FF;
+	float: right;
+}
+.footerSection
+{
+	width: auto;
+	height: 75px;
+	background-color: #FFFFFF;
+	margin-top: 402px;
+	clear: both;
+}
+.box
+{
+	width: 180px;
+	height: 180px;
+	background-color: yellow;
+	margin: 10px;
+	float: left;
+}
+.newsBox
+{
+	width: 790px;
+	height: 200px;
+	background-color: #FFFFFF;
+	margin: auto;
+	clear: both;
+}
+
+
+
+
+
+
+

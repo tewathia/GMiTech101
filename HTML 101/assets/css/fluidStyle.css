@@ -1,0 +1,104 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#mainSection
+{
+	background-color: #00CCFF;
+	height: 200px;
+	margin: 0 auto;						
+	width: 90%;
+
+}
+
+.headSection
+{
+	background-color: #444444;
+	height: 20%;
+	width: 100%;
+}
+
+.sideBox
+{
+	background-color: #00CCFF;
+	float: left;
+	height: 70%;
+	width: 25%;
+
+}
+
+
+.articleSection
+{
+	background-color: #DDDDDD;
+	float: left;
+	height: 70%;
+	width: 74%;
+
+}
+
+.footerSection
+{
+	background-color: #AAAAAA;
+	clear: left;
+	height: 10%;
+	width: 100%;
+}
+
+/*
+.contentSection
+{
+	background-color: #CC00FF;
+	float: right;
+	height: 400px;
+	width: 800px;
+
+}
+*/
+
+/*.box
+{
+	background-color: #0000FF;
+	float: left;
+	height: 150px;
+	margin: 25px;
+	width: 150px;
+
+}
+
+.box1
+{
+	background-color: #00FF00;
+	float: left;
+	height: 150px;
+	margin: 25px;
+	width: 150px;
+}
+
+.box2
+{
+	background-color: #FF0000;
+	float: left;
+	height: 150px;
+	margin: 25px;
+	width: 150px;
+}
+.box3
+{
+	background-color: #000000;
+	float: left;
+	height: 150px;
+	margin: 25px;
+	width: 150px;
+}
+
+.newsBox
+{
+	background-color: #FFFFFF;
+	clear: both;	
+	height: 190px;
+	margin: auto;
+	width: 780px;
+}*/

@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html>
+
+    <head>
+    <meta charset="UTF-8">
+    <title>01_div_basics_START</title>
+    
+		<style type="text/css">
+        
+        #mainContainerDiv
+        {
+            width:800px;
+            height:500px;
+            background-color:#666;
+        }
+        
+        #redBoxDiv
+        {
+            width:200px;
+            height:150px;
+            background-color:#F00;
+            /*border:#0F0 5px dotted;*/
+			/*margin:10px 5px;
+            padding:10px;*/
+			
+			/*use float to allow other elements to wrap around it, request & allow other div to come in same line */
+
+           
+        }
+        
+        #greenBoxDiv
+        {
+            width:200px;
+            height:150px;
+            background-color:#0F0;
+            /*border:#00F 5px dotted;*/
+			
+			/*use float to allow other elements to wrap around it, request & allow other div to come in same line */
+
+            
+        }
+        
+        #blueBoxDiv
+        {
+            width:200px;
+            height:150px;
+            background-color:#00F;
+            /*border:#00F 5px dotted;*/
+			
+			/* use clear to cancel/clear float given to earlier child. It removes floats and current div comes to default place-BLOCK LEVEL */
+
+            
+        }
+        
+        </style>
+    
+    </head>
+    
+    <body>
+    
+        <div id="mainContainerDiv">
+        
+            <div id="redBoxDiv">This is redBoxDiv .</div>
+            <div id="greenBoxDiv">This is greenBoxDiv.</div>
+            <div id="blueBoxDiv">This is blueBoxDiv.</div>
+        
+        </div>
+    
+    </body>
+    
+</html>

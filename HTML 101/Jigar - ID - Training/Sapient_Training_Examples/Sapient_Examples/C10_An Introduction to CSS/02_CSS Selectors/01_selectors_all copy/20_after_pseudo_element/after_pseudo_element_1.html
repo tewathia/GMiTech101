@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css2 - before pseudo element selector </title>
+
+<style type="text/css">
+
+p:after
+{
+content:" ::: Dynamic Text Inserted ::: ";
+}
+
+.leftColumn { width:25%; background-color:#CCC;  }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>:after pseudo element selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The :after selector <em><strong><u>inserts content after</u></strong></em> the content of the selected element(s).</li>
+        
+        <li>Use the <em><strong><u>content</u></strong></em> property to specify the content to insert.</li>
+        
+      </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">Want to insert some content after every p or h1 element's content:</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">elementName:after {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>elementName:after | </span> elementName:after { content:"Read this important text inserted "; }
+      
+      <p class="yellow">This is Para 1 with YELLOW COLOUR.</p>
+      <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+      
+    <div>
+        <p class="yellow">This is Para 1 with YELLOW COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <hr/>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p class="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <hr/>
+        <p-->
+
+	<li class="yellow">html</li>
+    <li>xhtml</li>
+    <li>html 5</li>
+    
+    <h2>List of web technologies : </h2>
+	
+     <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+     <p class="yellowText">This is Para 4 with YELLOW COLOUR</p>
+	
+	<ol>
+        <li>csss 3</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+    </ol>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="after_pseudo_element_browser_support.gif" alt="after pseudo element selector browser support" /><br/>The :after pseudo element selector is supported in all major browsers.
+        <br/><br/>For :afer pseudo element selector to work in IE8 and earlier, a &lt;!DOCTYPE&gt; must be declared.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

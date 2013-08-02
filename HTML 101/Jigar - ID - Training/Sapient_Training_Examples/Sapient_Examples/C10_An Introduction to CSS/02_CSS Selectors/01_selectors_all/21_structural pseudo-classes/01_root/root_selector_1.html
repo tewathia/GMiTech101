@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css3 - root selector </title>
+
+<style type="text/css">
+
+:root { background-color:#CF6; color:#FF1234 ; }
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Root Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The :root selector matches the document’s root element (root of the document). </li>
+        <li>In HTML, the root element is always the <strong>html</strong> element.</li>
+        
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">Want to Set the properties for the HTML document:</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">:root {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>:root | </span> :root { color:#FF1234 ; }
+        
+        <p class="redText">This is Para 1 with RED COLOUR</p>
+        <p class="blueText">This is Para 2 with BLUE COLOUR</p>
+        <p class="redText">This is Para 3 with RED COLOUR</p>
+        <p class="blueText">This is Para 4 with BLUE COLOUR</p>
+        <p class="blueText">This is Para 5 with BLUE COLOUR</p>
+
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="root_selector_browser_support.gif" alt="root selector browser support" /><br/>The :root selector is supported in all major browsers, except IE8 and earlier.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

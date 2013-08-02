@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Image Sprites START - Example</title>
+<style type="text/css">
+
+	body
+	{
+		background-color:#FCF;
+	}
+
+	/* define .nav_glob class */
+	img.nav_glob
+	{
+		width:64px;
+		height:51px;
+		border:1px black solid;
+		 /*insert background img path with x,y or left,top co-ordinates */
+		background:url(assets/images/01_icons_navsprites.gif) 0 0;
+	}
+	
+	/* define .nav_book class */
+	img.nav_book
+	{
+		width:64px;
+		height:51px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates */
+		background:url(assets/images/01_icons_navsprites.gif) -64px 0;
+		
+	}
+	
+	/* define .nav_puzzle class */
+	img.nav_puzzle
+	{
+		width:64px;
+		height:51px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates */
+		background:url(assets/images/01_icons_navsprites.gif) -128px 0;
+
+	}
+	
+	/* define .nav_internet class */
+	img.nav_internet
+	{
+		width:64px;
+		height:51px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates */
+		background:url(assets/images/01_icons_navsprites.gif) -192px 0;
+
+	}
+	
+	/* define .nav_mail class */
+	img.nav_mail
+	{
+		width:64px;
+		height:51px;
+		border:1px black solid;
+		/* insert background img path with x,y or left,top co-ordinates */
+		background:url(assets/images/01_icons_navsprites.gif) -256px 0;
+
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+	<ol>
+        <li>An <strong>image sprite</strong> is a collection of images put into a single image.</li>
+        <li>A web page with many images can take a long time to load and generates multiple server requests, image sprites are used to minimize server requests.</li>
+        <li>With the help of image sprite we can create navigation.</li>
+        <li>background:url(01_icons_navsprites.gif) 0 0; - Defines the background image and its position (left 0px, top 0px)</li>
+        <li>transparent.gif is used because with IMG tag SRC attribute is must </li>
+	</ol>
+    
+    <h2>Actual image</h2>
+    <img src="assets/images/01_icons_navsprites.gif" /> 
+    
+    <!--  insert required assets/images and assign id/class -->
+    <h2>Image result - after using Image Sprite</h2>
+    <img class="nav_glob" src="assets/images/transparent.gif"/>
+    <img class="nav_book" src="assets/images/transparent.gif"/>
+    <img class="nav_puzzle" src="assets/images/transparent.gif"/>
+    <img class="nav_internet" src="assets/images/transparent.gif"/>
+    <img class="nav_mail" src="assets/images/transparent.gif"/>
+
+</body>
+</html>
+

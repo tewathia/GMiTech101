@@ -1,0 +1,47 @@
+body
+{
+	font-size: 5px !important;
+}
+
+
+
+/* ID selector */
+#myHeading
+	{
+		background-color:#00000F;
+		color:#FFFFFF; 
+		font-size: 50px;
+		
+	}
+/* tag selector */
+p
+	{
+		color:#FF0000;
+		font-family:Verdana; 
+		font-size:25px;
+	}
+
+/* Class selectors */
+
+.paraStyle
+{
+	background-color: #00FF00;
+	color: #FF0000;
+	font-size: 36px;
+	font-family: Verdana;
+
+}
+/* Custom selectors */
+
+ul .listOne
+{
+	font-size: 200px;
+}
+#myList .listTwo
+{
+	color: #FF0000
+}
+table
+{
+	border-color: #FF0000
+}

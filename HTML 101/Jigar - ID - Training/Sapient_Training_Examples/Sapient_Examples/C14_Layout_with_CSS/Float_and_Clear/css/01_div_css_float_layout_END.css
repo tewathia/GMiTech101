@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+	margin:0px;
+	padding:0px;	
+}
+
+#mainContainer
+{
+	width:800px;
+	height:600px;
+	background-color:#FF0000;
+	
+	/* to bring layout/element to horizontal center */
+	margin:auto;
+}
+
+#headerDiv
+{
+	width:800px;
+	height:100px;
+	background-color:#00FF00;
+}
+
+#leftDiv
+{
+	width:300px;
+	height:400px;
+	background-color:#0000FF;
+	
+	/*use float to allow other elements to wrap around it, request & allow other div to come in same line */
+	float:left;
+}
+
+#rightDiv
+{
+	width:500px;
+	height:400px;
+	background-color:#000000;
+	color:#FFFFFF;
+	
+	/*use float to allow other elements to wrap around it, request & allow other div to come in same line */
+	float:left;
+	
+}
+
+#footerDiv
+{
+	width:800px;
+	height:100px;
+	background-color:#00FF00;
+	
+	/* use clear to cancel/clear float given to earlier child. It removes floats and current div comes to default place-BLOCK LEVEL */
+	clear:both;
+}
+

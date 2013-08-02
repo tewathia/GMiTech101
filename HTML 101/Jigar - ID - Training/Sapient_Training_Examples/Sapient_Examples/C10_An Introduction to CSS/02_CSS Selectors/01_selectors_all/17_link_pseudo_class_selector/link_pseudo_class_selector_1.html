@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css1/2 - link pseudo class selector </title>
+
+<style type="text/css">
+
+a:link { text-decoration:none; color:#FF0;}
+
+a:visited { color:#ccc;}
+
+a:hover { font-size:24px;  text-decoration:underline; }
+
+a:active { font-size:12px;}
+
+input:focus { background-color:#03F; color:#FFF;}
+
+
+.leftColumn { width:25%; background-color:#CCC;  }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Link Pseudo Class Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>This selector is used to set/modify the &lt;A href&gt; links tags & its stages like :link, :visited, :hover, :active etc.</li>
+        <li>Its advisable to follow the below order :
+			<ol>	               
+                <li>a:link { } - The :link selector is used to select unvisited links. </li>
+                <li>a:visited { } - The :visited selector is used to select visited links.</li>
+                <li>a:hover { } - The :hover selector is used to select elements when you mouse over them.
+
+Tip: The :hover selector can be used on all elements, not only on links.</li>
+                <li>a:active { } - The :active selector is used to select and style the active link; A link becomes active when you click on it.</li>
+                <li>
+                ** input:focus { } = Selects the input element which has focus.
+                </li>
+                
+			</ol>    
+</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">Wants to customize the by-default link properties. [check w3cschools link styling and create.]</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">a:state { } {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>a:link { } | </span> a:link { text-decoration:none ; }
+        
+        <p><a href="http://www.google.com">Visit Google.com</a></p>
+        
+		** input:focus { } : <br/><br/>
+		Enter Name : <input type="text" />
+   
+
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="link_pseudo_class_selector_browser_support.gif" alt="link pseudo class selector browser support" /><br/>The link pseudo class selector is supported in all major browsers.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css3 - element1~element2 general sibling preceded selector </title>
+
+<style type="text/css">
+
+p~li { color : red; text-decoration : underline  }
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Element1~Element2 / General Sibling / Preceded Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The element1~element2 selector matches occurrences of element2 that are preceded by element1.</li>
+        <li>Both elements must have the same parent, but element2 does not have to be immediately preceded by element1.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">Select and style every &lt;li&gt; element that are preceded by &lt;p&gt; with the same parent.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">elementName1~elementName2 {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>elementName1~elementName2 | </span> p~li { text-decoration : underline ; }
+    
+    <!--div-->
+        <p id="redText">This is Para 1 with RED COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <hr/>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p id="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <hr/>
+        <p id="pinkText">This is Para 5 with PINK COLOUR</p>
+	<!--/div-->
+
+	<li>HTML</li>
+    <li>XHTML</li>
+    <li>HTML 5</li>
+    
+    <h2>List of web technologies : </h2>
+
+	<ol>
+        <li>CSS 3</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+    </ol>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="general_sibling_preceded_selector_browser_support.gif" alt="general sibling selector browser support" /><br/>The element~element / adjacent sibling selector is supported in all major browsers. <br/><br/>Note: For element~element selector to work in IE8 and earlier, a &lt;!DOCTYPE&gt; must be declared.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

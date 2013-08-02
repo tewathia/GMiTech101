@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Number Checker</title>
+	
+	<script type="text/javascript">
+	function isEven(x)
+	{
+		var msg;
+		if (x%2 == 0){
+			msg=x  + " is even";
+
+		}
+		else {
+			msg=x + " is odd";
+		}
+		return msg;
+	}
+
+	function getRange()
+	{
+		// var a=parseInt(document.body.children[1].children[1].value);
+		// var b=parseInt(document.body.children[1].children[3].value);
+		var a=document.getElementsByClassName('textBox')[0].value;
+		var b=document.getElementsByClassName('textBox')[1].value;
+		document.getElementById('divMessage').innerHTML="";
+		for (var i=parseInt(a); i<=parseInt(b); i++)
+		{
+			inMsg=isEven(i);
+			document.getElementById('divMessage').innerHTML+=inMsg + "<br>";
+		}
+
+	}	
+	
+
+
+	function getRanged()
+	{
+		console.log("Button Clicked")
+	}
+	// document.getElementById('printButton').onclick=getRange;
+	
+	</script>
+</head>
+<body>
+	<form >
+		
+		<label for="Start">Starting Value</label>
+		<input type="text" name="Start" id="numStart" class="textBox">
+		<label for="End">Ending Value</label>
+		<input type="text" name="End" id="numEnd" class="textBox">
+		<input type="button" value="Print Number" id="printButton" >
+
+	</form>
+
+	<div id="divMessage">Message</div>
+	<script>
+	var printButton = document.getElementById("printButton");
+	printButton.onclick=getRange;
+	var a = 10;
+	document.getElementById("divMessage").innerHTML="Hi There" + a;
+
+	</script>
+
+
+	
+	<!-- <div style="position:absolute; left:200px; top:200px">
+		<label for="">start</label>
+		<input type="text" name="" id="">
+		<label for="">End</label>
+		<input type="text" name="" id="">
+		<input type="button" value="Print Numbers" onclick=" getranged();getRange();">
+	</div>
+-->
+</body>
+</html>

@@ -1,0 +1,48 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+#mainSection
+{
+	background-color: #666666;
+	height: 596px;
+	margin: 0 auto;
+	width: 1003px;
+}
+
+/* Four values for the floating element
+ - left
+ - right
+ - inherit
+ - none
+ */
+.box
+{
+	width: 200px;
+	height: 200px;
+	background-color: #FFCC00;
+	float: right;
+}
+.box1
+{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	float: left;
+}
+/* left, right, both, none */
+
+.box2
+{
+	width: 200px;
+	height: 200px;
+	background-color: #0000FF;
+	clear: left;
+}
+
+
+
+
+
+

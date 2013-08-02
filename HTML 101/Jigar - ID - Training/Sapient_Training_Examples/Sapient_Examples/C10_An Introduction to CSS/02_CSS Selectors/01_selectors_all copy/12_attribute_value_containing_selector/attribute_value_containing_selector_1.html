@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css2 - attribute~=value selector </title>
+
+<style type="text/css">
+
+[class~=yellow] { color : yellow; text-decoration : underline; font-weight:bold; border : 1px solid yellow;  }
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Attribute~=Value Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The [attribute~=value] selector is used to select elements with an attribute value containing a specified word.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">Select and style every element that are using attributes value containg specific word.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">elementName[attribute~=value] {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>elementName[attribute~=value] | </span> p[class~=yellow] { border : 1px solid red ; }
+    
+    <!--div-->
+        <p class="yellow">This is Para 1 with YELLOW COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <hr/>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p class="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <hr/>
+        <p class="yellowPara">This is Para 5 with YELLOW COLOUR</p>
+	<!--/div-->
+
+	<li class="yellow">HTML</li>
+    <li>XHTML</li>
+    <li>HTML 5</li>
+    
+    <h2>List of web technologies : </h2>
+
+	<ol>
+        <li>CSS 3</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+    </ol>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="attribute_value_containing_selector_browser_support.gif" alt="attribute value containg selector browser support" /><br/>The [attribute~=value] selector is supported in all major browsers. <br/><br/>Note: For [attribute~=value] selector to work in IE8 and earlier, a &lt;!DOCTYPE&gt; must be declared.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

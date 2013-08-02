@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>03_css_concept_specificity</title>
+<style type="text/css">
+
+body p
+{
+	color:red;
+	/* use other properties to show & explain The specificity */
+}
+
+div p
+{
+	/*color:green;*/
+}
+
+#mainPara
+{
+	/*color:blue;*/	
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>specificity</h1>
+
+<hr width="200" align="left"/>	
+
+<div>
+<p>Specificity is basically the more specific your selector is the more importance it will have. </p>
+</div>
+
+<p>Specificity is a mechanism within the CSS cascade that aids conflict resolution. The concept of specificity states that when two or more declarations that apply to the same element, and set the same property, have the same importance and origin, the declaration with the most specific selector will take precedence. </p>
+
+<p id="mainPara">Specificity principal apply with various selectors:</p>
+
+<ul>
+	<li>Tag</li>
+	<li>Class</li>
+	<li>Id</li>
+	<li>Compound</li>
+
+</ul>
+
+
+</body>
+</html>

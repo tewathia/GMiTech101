@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+	margin:0px;
+	padding:0px;
+}
+
+#mainDiv
+{
+	width:600px;
+	height:500px;
+	background-color:#999;
+	color:#fff;
+	
+	/* to bring layout/element to horizontal center */
+	margin:auto;
+	
+}
+
+#headerContainerDiv
+{
+	width:600px;
+	height:100px;
+	/*background-color:#f00;*/
+}
+
+
+#header01
+{
+	width:400px;
+	height:100px;
+	background-color:#123;
+	
+	/*use float to allow other elements to wrap around it, request & allow other div to come in same line */
+	float:left;
+	
+}
+
+#header02
+{
+	width:200px;
+	height:100px;
+	background-color:#456;
+	
+	/*use float to allow other elements to wrap around it, request & allow other div to come in same line */
+	float:left;
+	
+}
+
+#middleContainerDiv
+{
+	width:600px;
+	height:300px;
+	/*background-color:#FF0;*/
+}
+
+#left01
+{
+	width:300px;
+	height:300px;
+	background-color:#789;
+	
+	/*use float to allow other elements to wrap around it, request & allow other div to come in same line */
+	float:left;
+	
+}
+
+#right01
+{
+	width:300px;
+	height:300px;
+	background-color:#101;
+	
+	/*use float to allow other elements to wrap around it, request & allow other div to come in same line */
+	float:left;	
+	
+}
+
+#footer01
+{
+	width:600px;
+	height:100px;
+	background-color:#123;
+	text-align:center;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-decoration:underline;
+	
+}

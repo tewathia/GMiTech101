@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>CSS - Positioning Element END </title>
+
+<style type="text/css">
+
+/* static position property */
+#redDiv
+{
+	width:100px;
+	height:50px;
+	background-color:#FCF;
+	color:red;
+	/* static position - by default for every div, not necessary to include */
+	position:static;
+	
+}
+
+#greenDiv
+{
+	width:100px;
+	height:50px;
+	background-color:#0F9;
+	color:green;
+	/* static position - by default for every div, not necessary to include */
+	position:static;
+	
+}
+
+
+#blueDiv
+{
+	width:100px;
+	height:50px;
+	background-color:#39F;
+	color:blue;
+	/* static position - by default for every div, not necessary to include */
+	position:static;
+	
+}
+
+
+/* fixed position property */
+.fixed
+{
+	background-color:#993366;
+	width:200px;
+	text-align:right;
+	color:#FFFFFF;
+	/* fixed position */
+	position:fixed;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<p><h1>Positioning</h1></p>
+<hr width="500" align="left" />
+
+<p>
+
+    <ul>
+    
+        <li>The CSS positioning properties allow you to position an element.</li> 
+        <li>It can also place an element behind another, and specify what should happen when an element's content is too big.</li>
+        <li>Elements can be positioned using the top, bottom, left, and right properties.</li>
+    
+    </ul>
+    
+</p>
+
+
+
+
+<h3>There are four different positioning methods.</h3>
+
+
+
+<h1>1. Static Positioning</h1>
+<hr width="300" align="left" />
+
+<ul>
+
+	<li>HTML elements are positioned static by default.</li>
+    <li>A static positioned element is always positioned according to the normal flow of the page.</li>
+	<li>Static positioned elements are not affected by the top, bottom, left, and right properties.</li>
+
+</ul>
+<div id="redDiv">redDiv </div>
+<div id="greenDiv">greenDiv </div>
+<div id="blueDiv">blueDiv </div>
+
+<p>
+
+<hr width="75%" />
+</p>
+
+
+
+
+<h1>2. Fixed Positioning</h1>
+<hr width="300" align="left" />
+
+<ul>
+	<li>An element with fixed position is positioned relative to the browser window.</li>
+
+	<li>It will not move even if the window is scrolled: </li>
+
+</ul>
+
+<p>
+Example
+<br/> <strong>
+.fixedDiv
+{
+position:fixed;
+top:30px;
+right:5px;
+}
+</strong>
+</p>
+
+Note: IE7 and IE8 support the fixed value only if a !DOCTYPE is specified.<br/>
+-> Fixed positioned elements are removed from the normal flow.<br/>
+-> Fixed positioned elements can overlap other elements.
+<!-- fixed class for paragraph -->
+<p class="fixed">I am fixed...i will not move</p>
+
+<p>
+<hr width="75%" />
+</p>
+
+
+
+
+<h1>3. Relative Positioning</h1>
+<hr width="300" align="left" />
+
+<ul>
+    <li>A relative positioned element is positioned relative to its normal position.</li>
+    <li>The content of relatively positioned elements can be moved and overlap other elements, but the reserved space for the element is still preserved in the normal flow. </li>
+
+	<li>Relatively positioned elements are often used as container blocks for absolutely positioned elements. </li>
+</ul>
+
+<p>
+Example <br/><strong>
+
+redLeftDiv
+{
+position:relative;
+left:-20px;
+}
+
+redRightDiv
+{
+position:relative;
+left:20px;
+}
+</strong>
+
+
+<p>
+
+<hr width="75%" />
+</p>
+
+
+<h1>4. Absolute Positioning</h1>
+<hr width="300" align="left" />
+
+<ul>
+	<li>An absolute position is used to define our customize location with LEFT (x pos) & TOP (y pos) values.  </li>
+    <li>An absolute position element is positioned relative to the first parent element that has a position other than static. If no such element is found, the containing block is html: </li>
+    <li>Absolutely positioned elements are removed from the normal flow. </li>
+	<li>Absolutely positioned elements can overlap other elements. </li>
+</ul>
+
+<p>
+Example <br/> <strong>
+
+h2
+{
+position:absolute;
+left:100px;
+top:150px;
+}
+</strong>
+</p>
+
+<h1>Overlapping Elements </h1>
+
+<ul>
+
+	<li>Z-index simply refer to stack/order of divs. </ul>
+	<li>When elements are positioned outside the normal flow, they can overlap other elements. </li>
+    
+    <li>The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). </li>
+    
+    <li>An element can have a positive or negative stack order: </li>
+    
+    <li>An element with greater stack order is always in front of an element with a lower stack order.</li>
+    
+</ul>
+
+<p>
+Example <br/> <strong>
+
+img
+{
+position:absolute;
+left:0px;
+top:0px;
+z-index:-1;
+} 
+</strong>
+</p>
+
+<p>
+Note: If two positioned elements overlap, without a z-index specified, the element positioned last in the HTML code will be shown on top.
+</p>
+
+<p>
+
+<hr width="75%" />
+</p>
+
+
+</body>
+
+</html>
+

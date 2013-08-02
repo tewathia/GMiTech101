@@ -1,0 +1,44 @@
+body
+{
+	font-size: 36px;
+	font-family: Verdana !important;
+}
+/*Below is the ID selector */
+#myHeading
+{
+	background-color:#FFCC00;
+	color:#0000FF;
+	font-size: 15px;
+	font-family: Arial;
+}
+/* Below is the Tag selector */
+p
+{
+	font-size:25px;
+	font-family:Verdana;
+	color:#FF0000;
+}
+/* Below is class selector */
+.paraStyle
+{
+	background-color:#FFCC00;
+	color: #FF0000;
+	font-size: 16px;
+}
+
+/* Below is the compound / Custom selector  */
+#myList .listOne
+{
+	color: #FF0000;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css2 - element>element child selector </title>
+
+<style type="text/css">
+
+ol>li { color : red; text-decoration : underline  }
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Element>Element / Child Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The element>element selector is used to select elements with a specific parent.</li>
+        <li>This selector targets on only direct children ie. Elements that are not directly a child of the specified parent, are not selected.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">Select and style every &lt;li&gt; element where the immidiate parent is a &lt;ol&gt; element.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">elementName>elementName {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>elementName>elementName | </span> ol li { text-decoration : underline ; }
+    
+    <div>
+        <p id="redText">This is Para 1 with RED COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <hr/>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p id="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <hr/>
+        <p id="pinkText">This is Para 5 with PINK COLOUR</p>
+	</div>
+    
+    <h2>List of web technologies : </h2>
+    
+    <ul>
+    	<li>HTML</li>
+        <li>XHTML</li>
+        <li>HTML 5</li>
+    </ul>    
+    
+    <ol>
+    	<!--div-->
+            <li>CSS 3</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+        <!--/div-->
+    </ol>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="child_selector_browser_support.gif" alt="child selector browser support" /><br/>The element>element / child selector is supported in all major browsers. <br/><br/>Note: For element>element selector to work in IE8 and earlier, a &lt;!DOCTYPE&gt; must be declared.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

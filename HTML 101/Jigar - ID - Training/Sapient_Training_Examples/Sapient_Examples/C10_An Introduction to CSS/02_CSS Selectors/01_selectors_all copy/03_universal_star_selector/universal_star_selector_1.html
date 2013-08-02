@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css2 - universal * star selector </title>
+
+<style type="text/css">
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+div *
+{
+	background-color : #09F;
+	width:400px;
+}
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Universal * Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The universal/* selector selects all elements.</li>
+        <li>The universal/* selector can also select all elements inside another element.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">To Selects all elements inside another element. Want to select all Paragraphs inside Divs.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">element * {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>element * | </span> div * { background-color : #09F; }
+    
+    <div>
+        <p id="redText">This is Para 1 with RED COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p id="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <p id="pinkText">This is Para 5 with PINK COLOUR</p>
+	</div>
+    
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="universal_star_selector_browser_support.gif" alt="uiversal selector browser support" /><br/>The universal/star/* selector is supported in all major browsers.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

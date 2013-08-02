@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html>
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <title>form in html</title>
+        
+    </head>
+    
+    
+    <body>
+    
+        <h1><center>Enrollment Form</center></h1>
+       <!--create html form using form tag and form elements--> 
+        <form name="enrollmentForm" method="post" action="mailto:sanket@teknopoint.us">
+        
+            <table border="1" width="800">
+                
+                <tr>
+                    <td width="200"><label>Name:</label></td>
+                    <td width="600"><input type="text" name="_name" id="_name" size="30" maxlength="15" value="Enter name..." /></td>
+                </tr>
+                
+                <tr>
+                    <td width="200"><label>Password:</label></td>
+                    <td width="600"><input type="password" name="_password" id="_password" maxlength="5" /></td>
+                </tr>
+                
+                <tr>
+                    <td width="200"><label>Gender:</label></td>
+                    <td width="600">
+                    Male<input type="radio" name="_gender" id="_gender" value="male"/>
+                    Female<input type="radio" name="_gender" id="_gender" value="female"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td width="200"><label>Hobbies:</label></td>
+                    <td width="600">
+                    Reading <input type="checkbox" name="_hobby" id="_hobby" value="_reading"/>
+                    Music<input type="checkbox" name="_hobby" id="_hobby" value="_music"/>
+                    Travelling<input type="checkbox" name="_hobby" id="_hobby" value="_travelling"/><br/><br/>This is my hobby options. Please select proper hobby which you have. <br/>
+                    </td>
+                 </tr>
+                   
+                <tr>
+                    <td width="200"><label>Select City:</label></td>
+                    <td width="600">
+                    <select>
+                        <option>Please select City</option>
+                        <option>Delhi</option>
+                        <option selected="selected">Mumbai</option>
+                        <option>Ahmedabad</option>
+                        <option>Kolkatta</option>
+                        <option>Chennai</option>
+                    </select> 
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td width="200"><label>Comments:</label></td>
+                    <td width="600"><textarea name="_comments" id="_comments" rows="10" cols="80">Kindly insert your comments here </textarea>
+                    </td>
+                 </tr>
+                    
+                <tr>
+                    <td colspan="2">
+                    <br/>
+                    <center>
+                    <input type="submit" value="OK -- SAVE -- SUBMIT -- Yes -- Positive" />
+                    <input type="reset" value="NO -- Cancel -- RESET -- Negative" / >
+                    </center>
+                    <br/>
+                    </td>   
+                </tr>
+                        
+            </table>
+        
+        </form>
+    
+	</body>
+
+</html>

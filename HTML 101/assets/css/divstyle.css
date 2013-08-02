@@ -1,0 +1,47 @@
+/* Four floating element values
+-Left;
+-Right
+-Inherit
+-None
+ */
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#mainSection
+{
+	background-color: #666666;
+	height: 596px;
+	margin: 0 auto;						
+	width: 1003px;
+
+}
+
+.box 
+{
+	background-color:#FF0000; 
+	float: right;
+	height:200px;
+	width: 200px;
+}
+
+.box1 
+{
+	background-color:#00FF00; 
+	float: left;
+	height:200px;
+	width: 200px;
+}
+
+.box2 
+{
+	background-color:#0000FF; 
+	clear: right;
+	float:right;
+	height:200px;
+	width: 200px;
+}
+
+/* Clear:left, right, both, none*/

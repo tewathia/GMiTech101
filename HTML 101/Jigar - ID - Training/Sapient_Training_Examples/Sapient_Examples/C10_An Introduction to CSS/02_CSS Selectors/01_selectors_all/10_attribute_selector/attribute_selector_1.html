@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css2 - attribute selector </title>
+
+<style type="text/css">
+
+p[id] { color : red; text-decoration : underline  }
+
+.leftColumn { width:25%; background-color:#CCC; }
+
+/*.rightColumn { width:75%; background-color:#999; }*/
+
+</style>
+</head>
+
+<body>
+
+<table border="1" cellpadding="5" cellspacing="5" width="90%">
+
+	<tr>
+		<td width="100%" colspan="2"><h1>Attribute Selector</h1></td>      
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Meaning / Definition: </td>
+		<td width="75%" class="rightColumn">
+        <li>The [attribute] selector is used to select elements with the specified attribute.</li>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Scenario / Use : </td>
+		<td class="rightColumn">Select and style every element that are using same attributes.</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Syntax : </td>
+		<td class="rightColumn">elementName[attribute] {css properties : values ; }</td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Example : </td>
+		<td class="rightColumn"><span>elementName[attribute] | </span> p[id] { text-decoration : underline ; }
+    
+    <!--div-->
+        <p id="redText">This is Para 1 with RED COLOUR</p>
+        <p id="greenText">This is Para 2 with GREEN COLOUR</p>
+        <hr/>
+        <p id="blueText">This is Para 3 with BLUE COLOUR</p>
+        <p class="yellowText">This is Para 4 with YELLOW COLOUR</p>
+        <hr/>
+        <p class="pinkText">This is Para 5 with PINK COLOUR</p>
+	<!--/div-->
+
+	<li>HTML</li>
+    <li>XHTML</li>
+    <li>HTML 5</li>
+    
+    <h2>List of web technologies : </h2>
+
+	<ol>
+        <li>CSS 3</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+    </ol>
+        </td>        
+	</tr>
+    
+    <tr>
+		<td class="leftColumn">Broswer Support : </td>
+		<td class="rightColumn"><img src="attribute_selector_browser_support.gif" alt="attribute selector browser support" /><br/>The [attribute] selector is supported in all major browsers. <br/><br/>Note: For [attribute] selector to work in IE8 and earlier, a &lt;!DOCTYPE&gt; must be declared.</td>        
+	</tr>
+    
+</table>
+
+</body>
+</html>

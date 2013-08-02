@@ -1,0 +1,92 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#mainSection
+{
+	background-color: #666666;
+	height: 596px;
+	margin: 0 auto;						
+	width: 1003px;
+
+}
+
+.headerSection
+{
+	background-color: #FFCC00;
+	height: 120px;
+	width: auto;
+}
+
+.leftBox
+{
+	background-color: #00CCFF;
+	float: left;
+	height: 400px;
+	width: 200px;
+
+}
+
+.contentSection
+{
+	background-color: #CC00FF;
+	float: right;
+	height: 400px;
+	width: 800px;
+
+}
+
+.footerSection
+{
+	background-color: #00FFCC;
+	clear: left;
+	height: 76px;
+	width: auto;
+}
+
+.box
+{
+	background-color: #0000FF;
+	float: left;
+	height: 150px;
+	margin: 25px;
+	width: 150px;
+
+}
+
+.box1
+{
+	background-color: #00FF00;
+	float: left;
+	height: 150px;
+	margin: 25px;
+	width: 150px;
+}
+
+.box2
+{
+	background-color: #FF0000;
+	float: left;
+	height: 150px;
+	margin: 25px;
+	width: 150px;
+}
+.box3
+{
+	background-color: #000000;
+	float: left;
+	height: 150px;
+	margin: 25px;
+	width: 150px;
+}
+
+.newsBox
+{
+	background-color: #FFFFFF;
+	clear: both;	
+	height: 190px;
+	margin: auto;
+	width: 780px;
+}

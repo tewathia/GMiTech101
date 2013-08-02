@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#663366;
+	background-color:#663;
+	width:600px;
+}
+
+/*p{
+	font-family:Verdana, Geneva, sans-serif;
+ 	font-size:12px;
+ }*/
+ 
+ h1{
+	 color:#CC6600;
+}

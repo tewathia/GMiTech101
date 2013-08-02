@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+
+	function highlight(domNodes){
+		if (domNodes.length){
+			for(var i=0;i<domNodes.length;i++){
+				decorate(domNodes[i]);
+			}
+		} else {
+			decorate(domNodes);
+		}
+
+		function decorate(domNode){
+			domNode.style.border = "3px solid red";
+		}
+	}
+	function clear(domNodes){
+		if (domNodes.length){
+			for(var i=0;i<domNodes.length;i++){
+				decorate(domNodes[i]);
+			}
+		} else {
+			decorate(domNodes);
+		}
+
+		function decorate(domNode){
+			domNode.style.border = "";
+		}
+	}
+	</script>
+</head>
+<body>
+	<input type="text" name="txtFirst" id="txtFirst" class="string">
+	<input type="text" name="txtLast" id="class" txtLast="string">
+	<input type="text" name="txtAge" id="" class="number">
+	<input type="button" value="Submit" id="btnSubmit">
+	<ul>
+		<li class="item">Item No.1</li>
+		<li class="item">Item No.2</li>
+		<li class="item">Item No.3</li>
+	</ul>
+	<div id="divMessage"></div>
+</body>
+</html>

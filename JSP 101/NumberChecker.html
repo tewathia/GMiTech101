@@ -25,12 +25,13 @@
 		var a=document.getElementsByClassName('textBox')[0].value;
 		var b=document.getElementsByClassName('textBox')[1].value;
 		document.getElementById('divMessage').innerHTML="";
+		var result='';
 		for (var i=parseInt(a); i<=parseInt(b); i++)
 		{
 			inMsg=isEven(i);
-			document.getElementById('divMessage').innerHTML+=inMsg + "<br>";
+			result+=inMsg + "<br>";
 		}
-
+		document.getElementById('divMessage').innerHTML=result;
 	}	
 	
 

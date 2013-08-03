@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multi-purpose Sum function</title>
+	<script>
+	
+	function anyAdd()
+	{
+		var sum=0;
+		// console.dir(arguments);
+		for (var i=0; i<arguments.length;i++)
+			{if(typeof arguments[i]=="string")
+		{
+			sum+=parseInt(arguments[i]);
+		}
+		else if(arguments[i].length)
+		{	
+		// 	sum+=anyAdd(arguments[i]);
+			sum+=anyAdd.apply(this, arguments[i])
+		}
+		else if(typeof arguments[i]=="function")
+		{
+			sum+=anyAdd(arguments[i]());
+		}
+		else 
+		{
+			sum+=arguments[i];
+		}
+	}
+	return sum;
+}
+console.log(anyAdd(1,2,"4",[1, [2, "3"]]));
+</script>
+</head>
+<body>
+</body>
+</html>

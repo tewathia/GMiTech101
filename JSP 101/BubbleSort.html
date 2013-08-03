@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sort</title>
+	<script>
+	function bubbleSort(array,criteria)
+	{	
+		var newArray=array;
+		for(var i=0;i<newArray.length-1;i++)
+		{
+			for(var j=i+1; j<newArray.length;j++)
+				{	a=newArray[i];
+					b=newArray[j];
+					if(criteria(a,b))
+					{
+						temp=newArray[i];
+						newArray[i]=newArray[j];
+						newArray[j]=temp;
+						// newArray[i]=newArray[i]+newArray[j];
+						// newArray[j]=newArray[i]-newArray[j];
+						// newArray[i]=newArray[i]-newArray[j];
+					}
+				}
+				
+			}
+			return newArray;
+		}
+		function criteriaDescending(a,b)
+		{
+			return a<b;
+		}
+		function criteriaAscending(a,b)
+		{
+			return a>b;
+		}
+		function Ascending(a,b)
+		{
+			return (a.id)>(b.id);
+		}
+		var products = [
+		{id : 9, name : "pen", cost : 100, units : 10, category :1},
+		{id : 3, name : "hen", cost : 150, units : 11, category :2},
+		{id : 5, name : "ten", cost : 230, units : 9, category :1},
+		{id : 2, name : "ken", cost : 75, units : 23, category :2},
+		{id : 8, name : "den", cost : 23, units : 19, category :1},
+		{id : 1, name : "len", cost : 67, units : 7, category :1}
+		];
+		numbers=[9,5,2,4,1,23,7];
+
+		</script>
+	</head>
+	<body>
+
+	</body>
+	</html>

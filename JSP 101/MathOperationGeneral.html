@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mutiple mathematical operations</title>
+	<script>
+
+	function sumValue(array, attribute)
+	{	
+		var sum=0;
+		if (typeof attribute=="string")
+		{
+		for(i in array)
+			sum+=array[i][attribute];
+		}
+		else if (typeof attribute=="function")
+		{
+			sum+= attribute(array[i]);
+		}
+			return sum;
+	}
+	function costAttrib(p)
+	{
+		return p.id;
+	}
+	function countCheck(array, criteria)
+	{	
+		var count=0;
+		for(i in array)
+		{
+			if (criteria(array[i])) 
+				{count+=1;
+		}
+	}
+	return count;
+}
+	function highCost(p)
+	{
+		return p.cost>100;
+	}
+	function groupBy(array, attribute)
+	{
+		
+		var newArray = array;
+		for(i in array)
+		{
+			if()
+		}
+
+	}
+
+
+
+
+	var products = [
+		{id : 9, name : "pen", cost : 100, units : 10, category :1},
+		{id : 3, name : "hen", cost : 150, units : 11, category :2},
+		{id : 5, name : "ten", cost : 230, units : 9, category :1},
+		{id : 2, name : "ken", cost : 75, units : 23, category :2},
+		{id : 8, name : "den", cost : 23, units : 19, category :1},
+		{id : 1, name : "len", cost : 67, units : 7, category :1}
+		];
+		numbers=[9,5,2,4,1,23,7];
+	</script>
+
+
+</head>
+<body>
+	
+</body>
+</html>

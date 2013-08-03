@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array Filtering</title>
+	<script>
+	function filterEven(array)
+	{
+		var evenNumbers = new Array;
+		for (var i = 0; i<array.length;i++)
+			if (array[i]%2==0)
+			{evenNumbers.push(array[i]);}
+		return evenNumbers;
+
+	}
+		function filterOdd(array)
+	{
+		var oddNumbers = new Array;
+		for (var i in array)
+			if (array[i]%2==1)
+			{oddNumbers.push(array[i]);}
+		return oddNumbers;
+
+	}
+	function filter(array,criteria)
+	{
+		var result = new Array;
+		for (var i in array)
+			if (criteria(array[i]))
+			{result.push(array[i]);}
+		return result;
+
+	}
+	function threeCriteria(n)
+	{
+		return n % 3 == 0;
+	}
+	numberArray=[1,2,3,4,5,6,7,8,9];
+	product=[{id:"66", cost:6},{id:"55", cost:5},{id:"44", cost:4},{id:"33", cost:3},{id:"22", cost:2},{id:"11", cost:1}];
+	function costCriteria(n)
+	{
+		return n.cost > 4;
+	}
+
+
+
+	</script>
+</head>
+
+<body>
+	
+</body>
+</html>

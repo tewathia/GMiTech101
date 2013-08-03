@@ -20,16 +20,19 @@
 	// 	var spanID=this.getAttribute("spanID")
 	// 	document.getElementById(spanID).innerText = charValue + " /" + userLimit;
 	// }
-	function keyLimit(arg)
+	function keyLimit(arg) //here arg is the name given to an object, containing all the KeyboardEvent properties, passed when onkeydown event is triggered by/on the control//
 	{	var charValue=this.value.length;
 		var userLimit=parseInt(document.getElementById(this.getAttribute("limitID")).value);
 		var spanID=this.getAttribute("spanID")
 		document.getElementById(spanID).innerText = charValue + " /" + userLimit;
+		// if(charValue>=userLimit && arguments[0].keyCode!=8)
+		// 	{arguments[0].preventDefault();
+		// 	}	
+		// }
 		if(charValue>=userLimit && arg.keyCode!=8)
 			{arg.preventDefault();
 			}	
 		}
-
 		window.onload=initialize;
 		function initialize()
 		{

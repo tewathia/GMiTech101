@@ -1,0 +1,28 @@
+body
+{
+	background:url('assets/images/bg.jpg') repeat left top;
+}
+#wrapper
+{	
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#logo
+{
+	float: left;
+}
+#sprites
+{
+	float: left;
+}
+#blog
+{
+	width: 32px;
+	height: 32px;
+}
+#blog:hover
+{
+	width: 32px;
+	height: 32px;
+}

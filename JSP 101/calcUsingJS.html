@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/calcStyle.css">
+	<script src="assets/js/calcScript.js"></script>
+	<script>
+	window.onload=initialize;
+	</script>
+</head>
+<body><!-- 
+	form>input:text#valueA+select>option[value="value-$"]{value-$}*4+input:text#valueB+input:button#applyButton[value="Apply!"] -->
+	<form><input type="number" name="" id="valueA">
+		<select id="operatorDrop">
+			<option operation="+" value="Add">Add</option>
+			<option operation="-" value="Subtract">Subtract</option>
+			<option operation="*" value="Multiply">Multiply</option>
+			<option operation="/" value="Divide">Divide</option>
+			<input type="number" name="" id="valueB">
+			<input type="button" value="Apply!" id="applyButton">
+		</select></form>
+		<h5>Output Window</h5>
+		<section id="outputWindow">
+		</section>
+	</body>
+	</html>

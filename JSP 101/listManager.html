@@ -15,7 +15,7 @@
 		color:green;
 		text-decoration: underline;
 	}
-		</style>
+	</style>
 	<script>
 	window.onload=initialize;
 	function initialize()
@@ -31,14 +31,11 @@
 		var doneItems=document.querySelectorAll("ul#uList>li.done");
 		for (i=0;i<doneItems.length;i++)
 		{
-			deleteItem(doneItems[i]);
+			doneItems[i].remove();
+		}
 		// }
 		// doneItems.remove();
 		// document.getElementById('uList').removeChild(li.classList.contains("done"));
-	}
-	function deleteItem()
-	{
-		this.remove();
 	}
 	function btnDisable()
 	{
@@ -54,10 +51,10 @@
 		// else
 		// {
 		// 	document.getElementById('errorMessage').innerText="";
-			var li = document.createElement('li');
-			li.innerHTML = textBox.value;
-			li.onclick=function()
-			{
+		var li = document.createElement('li');
+		li.innerHTML = textBox.value;
+		li.onclick=function()
+		{
 			// this.className="done";
 			// this.onclick=function()
 			// {
@@ -65,7 +62,7 @@
 			// }
 			this.classList.toggle("done")
 
-			}
+		}
 			// li.onclick=colorChange;
 			document.getElementById('uList').appendChild(li);
 		// }
@@ -84,6 +81,7 @@
 	</script>
 </head>
 <body>
+	<h2>Task manager</h2>
 	<form>
 		<input type="text" id="textBox">
 		<input type="button" value="Add Item" id="addButton" disabled>
@@ -92,9 +90,9 @@
 	</form>
 	<div id="listItems">
 		<ul id="uList">
-		
+
 		</ul>
-	
+
 	</div>
 	
 

@@ -1,0 +1,17 @@
+div
+{
+	width: 455px;
+	height: 40px;
+	border:#666666 solid 1px;
+	text-align: center;
+	padding-top: 15px;
+}
+h5
+{
+	text-decoration: underline;
+}
+section
+{
+	width: 455px;
+	border:#000000 solid 2px;
+}

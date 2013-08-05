@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+	(function(){
+		window.addEventListener("load",initialize);
+		function initialize(){
+			document.getElementById("btnDoWork").addEventListener("click",btnDoWorkClick);
+		}
+		function btnDoWorkClick(){
+			displayMessage("Work Started");
+			setTimeout(function(){
+				doWork();
+				},2);
+		}
+		function doWork(){
+			var iterations=1000000/1000;
+			var count=0;
+			function loop()
+			{
+				for(var i=0;i<1000;i++)
+				{	
+					for(var j=0;j<100;j++)
+					{
+						for(var k=0;k<10;k++)
+						{}
+					}	
+				}
+
+				console.log(i);
+			
+			if(count<iterations)
+			{
+				count++;
+			}
+			else
+				{
+					clearInterval(handleValue);
+					displayMessage("Work Completed");	
+				}
+			
+		}	
+		var handleValue=setInterval(loop, 3);
+		
+		}
+
+		// function doWork(){
+		// 	var iterations=1000000/1000;
+		// 	var count=0;
+		// 	function loop()
+		// 	{
+		// 		for(var i=0;i<1000;i++)
+		// 		{	
+		// 			for(var j=0;j<100;j++)
+		// 			{
+		// 				for(var k=0;k<10;k++)
+		// 				{}
+		// 			}	
+		// 		}
+		// 	if(count<iterations)
+		// 	{
+		// 		count++;
+		// 		setTimeout(loop, 3);
+		// 		console.log(count);
+		// 	}
+		// 	else
+		// 	{
+		// 		displayMessage("Work Completed");
+		// 	}
+		// }
+		// 	loop();
+		// }
+
+		// function doWork(){
+			
+		// 	for(var i=0;i<1000;i++)
+		// 	{	
+		// 		for(var j=0;j<10000;j++){
+		// 			for(var k=0;k<1000;k++)
+		// 				{
+		// 					}
+
+		// 		}
+		// 	}console.log(k);
+		// }
+		function displayMessage(msg){
+			document.getElementById("divMessages").innerHTML += msg + "<br/>";
+			console.log(msg + "<br/>");
+		}
+	})();
+
+	</script>
+</head>
+<body>
+	<input type="button" value="Do Work" id="btnDoWork">
+	<input type="text" name="" id="">
+	<div id="divMessages"></div>
+</body>
+</html>

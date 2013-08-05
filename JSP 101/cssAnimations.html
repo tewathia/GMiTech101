@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Animations Demo</title>
+	<script>
+	window.onload=init;
+	
+	function init()	{
+		btn=document.getElementById('fadeOutButton');
+		cap=document.getElementById('caption');
+		btn.onclick=captionFadeOut;
+	}
+	function captionFadeOut()	{
+		cap.style.opacity=1;
+		btn=document.getElementById('fadeOutButton');
+		cap=document.getElementById('caption');
+		function reduceOpac()		{
+			cap.style.opacity-=0.01;
+			console.log(cap.style.opacity);
+			if(cap.style.opacity<0.02){
+				cap.style.opacity=0;
+				clearInterval(handleValue);
+				console.log('done');
+				cap.remove();
+				if(callback)
+				{
+					callback.call();
+				}
+			}
+		}
+		var handleValue=setInterval(reduceOpac,50);
+
+	}
+	</script>
+	<style>
+
+	#caption
+	{
+		font-size: 320px;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="caption">sapient</div>
+	<input type="button" value="fadeOutButton" id="fadeOutButton">
+</body>
+</html>

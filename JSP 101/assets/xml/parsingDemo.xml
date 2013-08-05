@@ -1,0 +1,34 @@
+ <ProductInfo>
+ 	<Category id="1" name="Stationary">
+ 		<Products>
+ 			<product id="11" name="product-11" cost="1100"></product>
+ 			<product id="12" name="product-12" cost="1200"></product>
+ 			<product id="13" name="product-13" cost="1300"></product>
+ 		</Products>
+ 	</Category>
+ 	<Category id="2" name="Stationary">
+ 		<Products>
+ 			<product id="21" name="product-21" cost="2100"></product>
+ 			<product id="22" name="product-22" cost="2200"></product>
+ 			<product id="23" name="product-23" cost="2300"></product>
+ 		</Products>
+ 	</Category>
+ 	<Category id="3" name="Stationary">
+ 		<Products>
+ 			<product id="31" name="product-31" cost="31"></product>
+ 			<product id="32" name="product-32" cost="32"></product>
+ 			<product id="33" name="product-33" cost="33"></product>
+ 		</Products>
+ 	</Category>
+ 	<Category id="4" name="Stationary">
+ 		<Products>
+ 			<product id="41" name="product-41" cost="4100"></product>
+ 			<product id="42" name="product-42" cost="4200"></product>
+ 			<product id="43" name="product-43" cost="4300"></product>
+ 		</Products>
+ 	</Category>
+ </ProductInfo>
+
+<!-- <ProductInfo> 	<Category id="1" name="Stationary"> 		<Products> 			<product id="11" name="product-11" cost="1100"></product> 			<product id="12" name="product-12" ost="1200"></product> 			<product id="13" name="product-13" cost="1300"></product> 		</Products> 	</Category> 	<Category id="2" name="Stationary"> 		<Products> 			product d="21" name="product-21" cost="2100"></product> 			<product id="22" name="product-22" cost="2200"></product> 			<product id="23" name="product-23" cost="2300"></product> 		/Products> 	</Category> 	<Category id="3" name="Stationary"> 		<Products> 			<product id="31" name="product-31" cost="31"></product> 			<product id="32" name="product-32" ost="32"></product> 			<product id="33" name="product-33" cost="33"></product> 		</Products> 	</Category> 	<Category id="4" name="Stationary"> 		<Products> 			product d="41" name="product-41" cost="4100"></product> 			<product id="42" name="product-42" cost="4200"></product> 			<product id="43" name="product-43" cost="4300"></product> 		/Products> 	</Category> </ProductInfo> -->
+
+ 

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<script src="assets/js/eventUtils.js"></script>
+	<script>
+
+	function addSub(node,eventName,subFn)
+	{
+		if(!node.events)
+			node.events={};
+		if(!node.events[eventName])
+			node.events[eventName] = [];
+		// events is a userdefined object, [eventName] is a member of this object, that is an array of functions to be called when node["on"+eventName] event is executed	
+		if(!node["on" + eventName])
+		{
+			node["on" + eventName] = function()
+			{
+				for(var i in node.events[eventName])
+				{
+					var subscriber = node.events[eventName][i];
+					subscriber();
+				}
+			}
+		}
+		node.events[eventName].push(subFn);
+		
+	}
+	function a()
+	{
+		console.log('a');
+	}
+	function b()
+	{
+		console.log('b');
+	}
+
+	</script>
+</head>
+<body>
+	<input type="button" value="Test" id="testButton">
+</body>
+</html>

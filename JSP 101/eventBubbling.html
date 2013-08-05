@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="assets/js/eventUtils.js"></script>
+	<style>
+	#div1
+	{
+		height: 300px;
+		width: 300px;
+		padding: 20px;
+		border: 2px solid black;
+		background: orange;
+	}
+	#div2
+	{
+		height: 250px;
+		width: 250px;
+		padding: 20px;
+		border: 2px solid black;
+		background: black;
+	}
+	#div3
+	{
+		height: 200px;
+		width: 200px;
+		padding: 20px;
+		border: 2px solid black;
+		background: yellow;
+	}
+	.caption
+	{
+		margin: 0 auto;
+/*		text-align: center;
+		vertical-align: middle;*/
+	}
+	</style>
+	<script>
+	// self executing anonymous function
+	(function(){
+		window.addEventListener("load", init);
+		function init()
+		{
+			document.getElementById('div1').addEventListener("click", function(){console.log('Div 1')});
+			document.getElementById('div2').addEventListener("click", function(){console.log('Div 2'); console.dir(this.nodeName);});
+			document.getElementById('div3').addEventListener("click", function(){console.log('Div 3')});
+			// document.getElementById('caption').addEventListener("click", function(){console.log('span')});
+
+		}
+
+
+
+	})();
+
+
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<div id="div2">
+			<div id="div3">
+				<span class="caption" id="caption">Sapient</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

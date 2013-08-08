@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Assignment 2</title>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script>
+	$(function(){var products=[
+	{id:"hen", description:"theHen"},
+	{id:"jen", description:"theJen"},
+	{id:"ken", description:"theKen"},
+	{id:"len", description:"theLen"},
+	];
+	function addOptions(){
+		var optionTags="";
+		for(var i in products)
+		{
+			var idVal=products[i].id;
+			console.log(idVal);
+			optionTags+='<option value="'+idVal+'">'+idVal+'</option>';
+		}
+		console.log(optionTags);
+		$("#operatorDrop").html(optionTags);
+	}
+	addOptions();
+	var $op = $('#operatorDrop');
+	$op.change(dispDesc);
+	function dispDesc()
+	{
+		var $div=$('#divMessage');
+		var opV=$('#operatorDrop').val();
+		for(var i in products)
+		{
+			if (products[i].id==opV)
+				$div.text(products[i].description)
+
+		}
+	}
+	});
+
+	</script>
+</head>
+<body>
+	<select style="margin-bottom:100px;" id="operatorDrop">
+			<!-- <option value="hen">hen</option>
+			<option value="jen">jen</option>
+			<option value="ken">ken</option>
+			<option value="len">len</option> -->
+		</select>
+		<div id="divMessage">Description Text Here</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task Manager</title>
+
+	<style>
+	div
+	{
+		position: absolute;
+		bottom:0px;
+		right: 0px;
+	}
+	.completed {
+		color : red;
+		font-style: italic;
+		text-decoration: line-through;
+	}
+	</style>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script>
+	(function(){
+		var count=0;
+		function initialize(){
+			$('#btnAdd').click(onBtnAddClick);
+			$('#btnRemoveCompleted').click(onBtnRemoveCompleted);
+			$("#ulTaskList").delegate("li", "click", onTaskItemClick);
+			$('#divMessage').slideUp(2000);
+			}
+		function onBtnAddClick(){
+			$('#ulTaskList').append($("<li>").text($('#txtTask').val()));
+			count++;
+			showMessage("List " +count+ " Added")
+			}
+		function onTaskItemClick(){
+			$(this).toggleClass('completed');
+			}
+		function onBtnRemoveCompleted(){
+			$('#ulTaskList>li.completed').slideUp(200);
+			showMessage("Completed Items Removed");
+			// $('#ulTaskList>li.completed').fadeOut(5000, function(){
+			// 	$(this).remove();
+			// });
+		}
+		function showMessage(msg){
+			$('#divMessage').text(msg).slideDown(200).delay(1000).slideUp(200);
+		}
+
+		$(initialize);
+		// window.addEventListener("DOMContentLoaded",initialize);
+
+	})();
+
+	</script>
+</head>
+<body>
+	<h1>Task Manager</h1>
+	<span>Task :</span>
+	<input type="text" name="" id="txtTask">
+	<input type="button" value="Add Task" id="btnAdd">
+	<input type="button" value="Remove Completed" id="btnRemoveCompleted">
+	<ul id="ulTaskList"></ul>
+	<div id="divMessage">dummy</div>
+</body>
+</html>

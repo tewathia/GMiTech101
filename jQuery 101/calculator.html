@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator using jQuery</title>
+	<script src="assets/js/	jquery-1.10.2.js"></script>
+	<style>
+	div
+	{
+		width: 480px;
+		border:1px black solid;	
+	}
+	.invalid {
+		border : 1px solid red;
+	}
+	</style>
+
+</head>
+<body>
+	<input class="invalid" type="text" id="num1">
+	<select name="" id="operatorDrop">
+		<option value="+">Add</option>
+		<option value="-">Subtract</option>
+		<option value="*">Multiply</option>
+		<option value="/">Divide</option>
+	</select>
+	<input class="invalid" type="text" id="num2">
+	<input type="button" value="calculate" id="calcButton">
+	<h2>Result Space</h2>
+	<div id="result"></div>
+	<script>
+	
+	$(function(){
+		$('#calcButton').click(calculate);
+		function calculate()
+		{
+
+			var a=$("#num1").val();
+			var b=$("#num2").val();
+			var op=$("#operatorDrop").val();
+			$("#result").html($("#result").html()+eval(a+op+b)+"</br>");
+		}
+		$(':text').blur(function(){
+
+			var $btn = $('#calcButton');
+			$this=$(this);
+			if($this.val()==""||isNaN($this.val()))
+				{$this.addClass('invalid');
+
+		}
+		else
+			{$this.removeClass('invalid');
+
+	}
+	if ($("input:text.invalid").length > 0) {
+		$btn.attr("disabled", true);
+	}
+	else
+		$btn.attr("disabled", false);
+
+
+}
+);
+	});
+	// $(":text").blur(function(){
+	// 	$this=$(this);
+
+	// })
+
+</script>
+</body>
+</html>

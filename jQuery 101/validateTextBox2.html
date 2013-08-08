@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validate Text Box</title>
+	<style>
+	.invalid
+	{
+		border:1px red solid;
+	}
+	form input+span
+	{
+		color:red;
+	}
+	</style>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script>
+	$(function(){
+		$(':text').on("blur",function(){
+			$this=$(this);
+			var spanId=$this.attr('spanId');
+			var hintText=$this.attr('hintText');
+			if ($this.val()==""){
+				$this.addClass('invalid');
+				console.log($this);
+				var spanTag="<span id='"+spanId+"'></span>";
+				console.dir("<span id='"+spanId+"'></span>");
+				$this.after(spanTag);}
+			else{
+				$this.removeClass('invalid');
+				console.dir('#'+spanId);
+				$('#'+spanId).html('');}
+		})
+	});
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" name="" id="txt1" hintText="Enter first name!" spanId="span1">
+		<br/>
+		<input type="text" name="" id="txt2" hintText="Enter second name!" spanId="span2">
+		<br/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+form
+{
+	width: 300px;
+	border:1px black solid;
+}
+.invalid
+{
+	border:1px red solid;
+}
+form input+span
+{
+	color:red;
+}

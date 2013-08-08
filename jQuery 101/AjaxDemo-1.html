@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script>
+	$(function(){
+		$('#btnContent').click(loadContentAjax);
+		function loadContentAjax(){
+			// console.log('abc');
+			// $('#loadContent').load('partialPage.html');}
+			// $.get("partialPage.html",ajaxCallback,"html");
+			// function ajaxCallback(data, status)
+			// {
+			// 	if (status=="success")
+			// 		$("#loadContent").html(data);
+			// }
+			// $.get('employee.json', jsonCallback, "json");
+				function jsonCallback(data)
+			{
+				// if(status=="success")
+				var html="<table>";
+					// console.log(data[1].name);
+				// for(i in data)
+				// {
+				// 	html+="<tr><td>"+data[i].id+"</td><td>"+data[i].name+"</td><td>"+data[i].salary+"</td></tr>";
+				// }
+				$.each(data,function(index,emp)
+				{
+					html+="<tr><td>"+emp.id+"</td><td>"+emp.name+"</td><td>"+emp.salary+"</td></tr>";
+				});
+				html+="</table>";
+				$("#loadContent").html(html);	
+
+			}
+			// $.ajax({
+			// 	url:"employee.json",
+			// 	type:"get",
+			// 	datatype:"json",
+			// 	success:jsonCallback
+			// });		
+			$.ajax({
+				url:"employee.json",
+				type:"get",
+				datatype:"json",
+				
+			}).done(jsonCallback);		
+		}
+	});
+	</script>
+	<style>
+	table,tr,td
+	{
+		padding: 20px;
+		width: 500px;
+		margin: 0 auto;
+		text-align: center;
+		border:1px solid black;
+	}
+	.ajaxContent
+	{
+		width: 200px;
+		margin: 0 auto;
+		padding: 20px;
+		border:2px solid red;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<input type="button" value="Load Content" id="btnContent">
+	<div id="loadContent"></div>
+</body>
+</html>

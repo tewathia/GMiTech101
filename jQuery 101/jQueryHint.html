@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery hints</title>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script>
+
+	jQuery(window).load(init);
+	function init()
+	{textBox1=$('#tBox1')
+	function setV()
+	{
+		if (textBox1.val()=="")
+			textBox1.val("dummy text");
+	}
+	function clearV()
+	{
+		if (textBox1.val()=="dummy text")
+			textBox1.val("");
+	}
+	textBox1.focus(clearV);
+	textBox1.blur(setV);
+	}
+	</script>
+</head>
+<body>
+	<input type="text" value="dummy text" id="tBox1">
+	<input type="text" id="tBox2">
+</body>
+</html>

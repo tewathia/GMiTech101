@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Pseudo Selecter</title>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<style>
+	td
+	{
+		width: 200px;
+		border:1px solid black ;
+	}
+	.oddRow
+	{
+		background-color: blue;
+	}
+	.evenRow
+	{
+		background-color: red;
+	}
+	</style>
+	<script>
+	$(function(){
+		$('#styleButton').on("click", function(){
+			console.log("button clicked");
+			// for(var i=0; i<$('tr').length;i++)
+			// 	if((i+1)%2==0)
+			// 		$($('tr')[i])	.addClass("evenRow");
+			// 	else
+			// 		$($('tr')[i]).addClass("oddRow");
+			$('tr:even').toggleClass("evenRow");
+			$('tr:odd').toggleClass("oddRow");
+		})
+	});
+
+
+	</script>
+</head>
+<body>
+	<table id="tableId">
+		<tr id="cell1">
+			<td>a-1</td>
+			<td>a-2</td>
+		</tr>
+		<tr id="cell2">
+			<td>a-1</td>
+			<td>a-2</td>
+		</tr>
+		<tr id="cell3">
+			<td>a-1</td>
+			<td>a-2</td>
+		</tr>
+		<tr id="cell4">
+			<td>a-1</td>
+			<td>a-2</td>
+		</tr>
+		<tr id="cell5">
+			<td>a-1</td>
+			<td>a-2</td>
+		</tr>
+	</table>
+	<input type="button" value="apply styling" id="styleButton">
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Salary Calculator</title>
+	<link rel="stylesheet" href="assets/css/salaryCalcStyle.css">
+	<script src="assets/js/salaryCalcScript.js"></script>
+	<script>
+	window.addEventListener("load", salaryCalcApp.initializeFn);
+	// This is the initialize function that is called when the window is loaded
+	
+
+	</script>
+</head>
+<body>
+	<!-- this is the section containing the entire salary calculator form -->
+	<section id="salaryBox">
+
+		<form action="">
+			<!-- This takes as input from the user the basic component of salary -->
+			<span id="basicSpan">Basic</span>
+			<input type="text" errorSpan="basicErrorSpan" class="textBox" id="basicText">
+			<span id="basicErrorSpan"></span></br>
+			<!-- This takes as input from the user the hra component of salary -->
+			<span id="hraSpan">HRA</span>
+			<input type="text" errorSpan="hraErrorSpan" class="textBox" id="hraText">
+			<span id="hraErrorSpan"></span></br>
+			<!-- This takes as input from the user the da component of salary -->
+			<span id="daSpan">DA</span>
+			<input type="text" errorSpan="daErrorSpan" class="textBox" id="daText">
+			<span id="daErrorSpan"></span></br>
+			<!-- This takes allows the user to set the appliacable tax percentage value -->
+			<span id="taxSpan">Tax(%)</span>
+			<input type="range" id="taxSlider">
+			<span id="taxValueSpan">50%</span></br>			
+			<!-- This takes as input from the user the total days in the given time period -->
+			<span id="totalDaysSpan">Total Days</span>
+			<input type="text" errorSpan="totalDaysErrorSpan" class="textBox" id="totalDaysText">
+			<span id="totalDaysErrorSpan"></span></br>
+			<!-- This takes as input from the user the actual working days -->
+			<span id="workingDaysSpan">Working Days</span>
+			<input type="text" errorSpan="workingDaysErrorSpan" class="textBox" id="workingDaysText">
+			<span id="workingDaysErrorSpan"></span></br>
+			<!-- This button submits the entire form-->
+			<input type="submit" value="Calculate" id="submitButton">
+		</form>
+
+
+
+	</section>
+</body>
+</html>

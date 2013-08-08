@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>image background automatic assignment</title>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script>
+	$(function(){
+		$('#iconButton').on("click",function(){
+			$('a[href$="doc"]+img').css("background","url('assets/images/icons/drive.png')");
+			$('a[href$="xls"]+img').css("background","url('assets/images/icons/disk.png')");
+			$('a[href$="pdf"]+img').css("background","url('assets/images/icons/drink.png')");
+		});
+	});
+	</script>
+	<style>
+	img
+	{
+		width: 16px;
+		height: 16px;
+	}
+	</style>
+</head>
+<body>
+	<a href="1.doc">link-1</a><img alt="link" id="image-1"></img><br>
+	<a href="2.xls">link-2</a><img alt="link" id="image-2"></img><br>
+	<a href="3.pdf">link-3</a><img alt="link" id="image-3"></img><br>
+	<a href="4.doc">link-4</a><img alt="link" id="image-4"></img><br>
+	<a href="5.xls">link-5</a><img alt="link" id="image-5"></img><br>
+	<a href="6.pdf">link-6</a><img alt="link" id="image-6"></img><br>
+	<input type="button" value="Apply Icons" id="iconButton"><br>
+	<a href="#"><img src="assets/images/icons/vector.png" alt="">abc</img></a>
+</body>
+</html>

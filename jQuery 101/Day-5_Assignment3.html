@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Assignment 3</title>
+	<style>
+	.invalid {
+	border : 1px solid red;
+	}</style>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script>
+	$(function(){var products=[
+	{id:"hen", description:"theHen"},
+	{id:"jen", description:"theJen"},
+	{id:"ken", description:"theKen"},
+	{id:"len", description:"theLen"},
+	];
+	var totalValue=0;
+	$('#calcButton').click(updateTotal);
+	function updateTotal()
+	{	
+		var i = $('#itemsBox');
+		var c = $('#costBox');
+		totalValue+=parseInt(i.val())*parseInt(c.val());
+		$('#totalCost').text(totalValue);
+		console.log(totalValue);
+	}
+	
+	function addOptions(){
+		var optionTags="";
+		for(var i in products)
+		{
+			var idVal=products[i].id;
+			console.log(idVal);
+			optionTags+='<option value="'+idVal+'">'+idVal+'</option>';
+		}
+		console.log(optionTags);
+		$("#operatorDrop").html(optionTags);
+	}
+	addOptions();
+	var $op = $('#operatorDrop');
+	$op.change(dispDesc);
+	function dispDesc()
+	{
+		console.log('change');
+		var $div=$('#divMessage');
+		var opV=$('#operatorDrop').val();
+		var i = $('#itemsBox');
+		var c = $('#costBox');
+		i.val('');
+		c.val('');
+		for(var i in products)
+		{
+			if (products[i].id==opV)
+				$div.text(products[i].description)
+
+		}
+	}
+
+	});
+
+	</script>
+</head>
+<body>
+	<select style="margin-bottom:100px;" id="operatorDrop">
+			<!-- <option value="hen">hen</option>
+			<option value="jen">jen</option>
+			<option value="ken">ken</option>
+			<option value="len">len</option> -->
+		</select>
+		<label for="i">Number of items</label>
+		<input type="text" name="i" id="itemsBox">
+		<label for="c">Cost Per Item</label>
+		<input type="text" name="c" id="costBox">
+		<input type="button" value="Add" id="calcButton">
+		<span id="totalCost">0</span>
+		<div id="divMessage">Description Text Here</div>
+
+</body>
+</html>

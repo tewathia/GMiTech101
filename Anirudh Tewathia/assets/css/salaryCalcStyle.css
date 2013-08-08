@@ -1,0 +1,22 @@
+/*css styling for the salary form section starts here*/
+#salaryBox
+{
+	width: 400px;
+	padding: 50px;
+	border:2px solid black;
+}
+/*css styling for the salary form section ends here*/
+
+/*css styling for the class that checks for blanks text boxes starts here*/
+.failValidate
+{
+	border: 2px solid red;
+}
+/*css styling for the class that checks for blanks text boxes ends here*/
+
+/*css styling for class that validates the number of working days vs total days here*/
+.failValidateDays
+{
+	border: 2px solid red;
+}
+/*css styling for the class that validates the number of working days vs total days ends here*/

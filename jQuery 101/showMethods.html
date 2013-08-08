@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show Methods jQuery using For-In</title>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script>
+	$(function(){
+		var methodlist="";
+		$('#btnShowMethod').click(onShowClick);
+		function onShowClick(){
+			for (var i in $('#btnShowMethod'))
+			{
+				if(typeof $('#btnShowMethod')[i]=="function"){
+					methodlist+=i+"</br>"
+
+				}
+			}
+			$('#listMethods').html(methodlist);}
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="Show Methods(jQuery)" id="btnShowMethod">
+	<div id="listMethods"></div>
+</body>
+</html>

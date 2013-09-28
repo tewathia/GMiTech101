@@ -45,7 +45,9 @@
 				type:"get",
 				datatype:"json",
 				
-			}).done(jsonCallback);		
+			}).done(jsonCallback).fail(function(){
+				console.log('fail!')
+			}).always().then();		
 		}
 	});
 	</script>
